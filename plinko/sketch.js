@@ -5,7 +5,6 @@
 
 // module aliases
 var Engine = Matter.Engine;
-//var Render = Matter.Render; we are not using this variable
 var World = Matter.World;
 var Bodies = Matter.Bodies;
 
@@ -14,15 +13,17 @@ var balls = [];
 var ground;
 var plinkos = [];
 
+
 function setup() {
     createCanvas(900, 600);
-
     engine = Engine.create(); // create an engine
 
     setupGround();
     setupPins();
     generateNewBall();
 }
+
+
 ///////////////////////////////////////////////////////////
 function draw() {
     background(0);
@@ -37,8 +38,11 @@ function keyPressed() {
     generateNewBall();
 }
 ///////////////////////////////////////////////////////////
+function mouseClicked() {
+    generateNewBall();
+}
+///////////////////////////////////////////////////////////
 function setupGround() {
-    //your code here
     ground = Bodies.rectangle(0, height - 20, width * 2, 10, {
         isStatic: true
     });
@@ -83,7 +87,6 @@ function drawPins() {
 }
 ///////////////////////////////////////////////////////////
 function generateNewBall() {
-    //your code here
     var ball = Bodies.circle(random(15, width - 15), 0, 15, {
         restitution: 1
     });
@@ -93,7 +96,6 @@ function generateNewBall() {
 }
 ///////////////////////////////////////////////////////////
 function drawBalls() {
-    //your code here
     fill(255, 0, 0);
     for (var i = 0; i < balls.length; i++) {
         drawVertices(balls[i].vertices);
@@ -101,8 +103,6 @@ function drawBalls() {
 }
 
 ///////////////////////////////////////////////////////////
-// **** HELPER FUNCTIONS ****
-// DO NOT WRITE BELOW THIS LINE
 ///////////////////////////////////////////////////////////
 function drawVertices(vertices) {
     beginShape();

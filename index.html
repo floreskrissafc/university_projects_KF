@@ -1,24 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-   <meta charset="utf-8">
-   <title>Kriss Flores's Projects Demo</title>
+    <meta charset="UTF-8">
+    <title>Kriss' Flores Portfolio</title>
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/footer.css">
+
+    <style>
+        #description {
+            margin: auto;
+            width: 95%;
+            font-size: 2.1vh;
+            margin-bottom: 6vh;
+            text-align: center;
+            line-height: 1.7;
+            font-weight: lighter;
+        }
+
+        #title-message {
+            font-size: 6vw;
+            margin-bottom: 6vh;
+            font-weight: 900;
+        }
+
+        #title-name {
+            font-size: 2.3vw;
+            margin-bottom: 6vh;
+            font-weight: bolder;
+        }
+
+        p.left-p {
+            text-align: left;
+            align-self: left;
+            align-items: left;
+            justify-self: left;
+            margin-bottom: 3vh;
+            font-size: 2vh;
+
+        }
+
+        .title {
+            font-size: 3.7vw;
+        }
+
+        hr {
+            color: red;
+            border-color: white;
+            opacity: 30%;
+
+        }
+
+        .row {
+            height: 40vw;
+            width: 100%;
+            margin-bottom: 5vh;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .col {
+            width: 48%;
+            background-color: antiquewhite;
+            height: 100%;
+            display: flex;
+            border-radius: 1vw;
+        }
+
+        .col-button {
+            margin: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+            max-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        .col:hover {
+            opacity: 50%;
+        }
+
+        .col-button p {
+            color: black;
+        }
+
+        .project-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 70%;
+            padding-top: 1vw;
+            max-width: 100%;
+            align-self: center;
+            min-height: 70%;
+        }
+
+        .project-pic {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+        .project-info {
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            padding-left: 2vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            background-color: rgb(34, 34, 36);
+            min-height: 20%;
+            border-bottom-left-radius: 1vw;
+            border-bottom-right-radius: 1vw;
+
+        }
+
+        .project-info p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: left;
+        }
+
+
+        .project-title {
+            font-size: 2.5vw;
+            font-weight: 800;
+            margin-bottom: 0.5vh;
+        }
+
+        .project-description {
+            font-size: 1.5vw;
+        }
+
+        #recaller_background {
+            background-color: darkblue;
+        }
+
+        .black_background {
+            background-color: black;
+        }
+
+        #clock {
+            border-radius: 20em;
+        }
+
+    </style>
 </head>
+
 <body>
-    <ul>
-      <li><a href="Apply_noise_into_font_border/noise_in_font/index.html">Apply_noise_into_font_border</a></li>
-      <li><a href="Asteroid_Game_Clone_with_p5.js /index.html">Asteroid_Game_Clone_with_p5.js</a></li>
-      <li><a href="Basic Clock with p5.js /clock/index.html">Basic Clock with p5.js </a></li>
-      <li><a href="Basic_Solar_System_with_p5.js /Solar_System/index.html">Basic_Solar_System_with_p5.js</a></li>
-      <li><a href="Bodies_with_p5.js_and_matter.js /Bodies_with_mouse_interactions/index.html">Bodies_with_p5.js_and_matter.js </a></li>
-      <li><a href="Falling_dominoes/index.html">Falling_dominoes</a></li>
-      <li><a href="Follow_the_mouse_drawing_with_p5.js /follow_the_mouse/index.html">Follow_the_mouse_drawing_with_p5.js</a></li>
-      <li><a href="Forces_and_friction_with_p5.js /Gravity_and_friction_on_bodies/index.html">Forces_and_friction_with_p5.js</a></li>
-      <li><a href="Randomly_changing_font_border/Random_font_border/index.html">Randomly_changing_font_border</a></li>
-      <li><a href="angry_Birds_Cloned_Game_with_p5.js /angry_Birds_Cloned_Game/index.html">angry_Birds_Cloned_Game_with_p5.js</a></li>
-      <li><a href="Basic Clock with p5.js /clock/index.html">basic_clock_with_p5js</a></li>
-      <li><a href="generative_grid_with_p5.js /grid/index.html">generative_grid_with_p5.js </a></li>
-      <li><a href="plinko/index.html">plinko</a></li>
-    </ul>
+    <div class="centered-content">
+
+        <div id="logo-container">
+            <a href="#"> <img id="logo" src="assets/logo.png"></a>
+        </div>
+
+
+        <p id="title-message">Passionate to Learn, Thrive, and Showcase the Art of Code</p>
+
+        <p id='description'>Greetings! I'm a Computer Science enthusiast in the final stretch of my Bachelor's journey. Hailing from a Mechanical Engineering background, I'm passionate about crafting engaging learning experiences through game development and interactive design.</p>
+
+        <div id="my-works-container">
+
+            <p class="left-p title" style="font-size: 3.7vw;">My Works</p>
+
+            <hr>
+
+            <p class="left-p" style="margin-top: 4vh">These are some of the projects I developed during my studies at the University of London.</p>
+
+            <div id="works-container">
+
+                <div class="row">
+
+                    <div class="col">
+                        <a class="col-button" href="koios_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/koios.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Koios</p>
+                                <p class="proj-text project-description">Language Learning App, React-Native, iOS, Android, Mobile</p>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="col" id="recaller_background">
+                        <a class="col-button" href="recaller_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/recaller.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Recaller</p>
+                                <p class="proj-text project-description">Language Learning App, React-Native, iOS, Android, Mobile</p>
+                            </div>
+
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col black_background">
+                        <a class="col-button" href="angry_birds_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/angry_birds.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Angry Birds Clone</p>
+                                <p class="proj-text project-description">Gaming, p5.js, Matter.js</p>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="col black_background">
+                        <a class="col-button" href="asteriods_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/asteroids.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Asteroid Game Clone</p>
+                                <p class="proj-text project-description">Gaming, p5.js</p>
+                            </div>
+
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col black_background">
+                        <a class="col-button" href="bouncing_balls_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/gravity.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Gravity on bodies</p>
+                                <p class="proj-text project-description">Animations, p5.js, forces, friction.</p>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="col black_background">
+                        <a class="col-button" href="noisy_font_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/noise.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Noise in Font</p>
+                                <p class="proj-text project-description">Animations, p5.js, noise</p>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col black_background">
+                        <a class="col-button" href="clock_entry_point.html">
+                            <div class="project-img">
+                                <img id="clock" class="project-pic" src="assets/clock.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Clock with p5.js</p>
+                                <p class="proj-text project-description">Animations, p5.js, Rotations, Translations.</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col black_background">
+                        <a class="col-button" href="follow_the_mouse_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/follow_mouse.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Follow the mouse</p>
+                                <p class="proj-text project-description">Animations, p5.js, location, velocity, acceleration.</p>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col black_background">
+                        <a class="col-button" href="plinko_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/plinko.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Plinko</p>
+                                <p class="proj-text project-description">Animations, p5.js, Matter.js, forces on bodies</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col black_background">
+                        <a class="col-button" href="solar_system_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/solar_orbits.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Solar Orbits</p>
+                                <p class="proj-text project-description">Animations, p5.js, rotation, translation, lights </p>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer id="footer">
+
+        <div id="footer-icons-container" class="footer-content">
+
+            <a href="https://www.linkedin.com/in/krissafc/" target="_blank">
+                <img class="footer-icon" src="assets/linkedin_logo.png">
+            </a>
+
+            <a href="https://github.com/floreskrissafc/university_projects_KF" target="_blank">
+                <img class="footer-icon" style="margin-right: 0;" src="assets/github-logo.png">
+            </a>
+
+        </div>
+
+        <div class="footer-content">
+
+            <p class="">Kriss Flores © 2023</p>
+
+        </div>
+
+    </footer>
+
 </body>
-</html>  
+
+</html>
