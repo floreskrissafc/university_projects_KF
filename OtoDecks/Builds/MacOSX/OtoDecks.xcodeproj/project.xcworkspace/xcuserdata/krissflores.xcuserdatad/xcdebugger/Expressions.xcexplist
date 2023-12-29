@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "PlaylistComponent::loadState(juce::File&amp;):PlaylistComponent.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "b.getArray()">
+            </PersistentString>
+            <PersistentString
+               value = "JSON::parse(a)">
+            </PersistentString>
+            <PersistentString
+               value = "gfgf.isArray()">
+            </PersistentString>
+            <PersistentString
+               value = "tree.getProperty(trackTitlesVector).getArray().getUnchecked(0).toStdString()">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "DJAudioPlayer::prepareToPlay(int, double):DJAudioPlayer.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "DJAudioPlayer::DJAudioPlayer(juce::AudioFormatManager&amp;):DJAudioPlayer.cpp">
+      </ContextState>
+      <ContextState
+         contextName = "PlaylistComponent::saveState(juce::File&amp;):PlaylistComponent.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "StringArray actualTitles ( tree.getProperty(trackTitlesVector));">
+            </PersistentString>
+            <PersistentString
+               value = "pathToFile.getFullPathName();">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PlaylistComponent::paintCell(juce::Graphics&amp;, int, int, int, int, bool):PlaylistComponent.cpp">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
