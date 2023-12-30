@@ -1,0 +1,50 @@
+{% load static %}
+{% load bootstrap4 %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Awesome Social Media Website">
+        <meta name="keywords" content="social, network, advanced_web_development">
+        <meta name="author" content="Student Number: 190126209">
+        <title>Chat Room</title>
+        {% bootstrap_css %}
+        {% bootstrap_javascript jquery='full' %}
+        <link rel="stylesheet" type="text/css" href="../static/css/social_network.css">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/chat.css' %}">
+    </head>
+    <body>
+
+        <a class="leaveButton" href="../../logout/">Logout</a>
+
+        <a class="leaveButton" href="../../user_profile/{{request.user.username}}" > Leave Chat</a>
+        <div class="container">
+            <div id="chat-log">
+                {% for chat in chats.all %}
+                    {% if chat.user.id == request.user.id %}
+                    <div class="message sender">
+                        {{ chat.content }}
+                    </div>
+                    {% else %}
+                        <div class="message receiver">
+                            {{ chat.content }}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+
+        </div>
+        <div class="container">
+            <input class="textInput" id="chat-message-input" type="text" size="100"><br>
+            <input class="button" id="chat-message-submit" type="button" value="Send">
+            {{ room_name|json_script:"room-name" }}
+
+        </div>
+        <div id="footer">
+            <hr>
+            <p>&copy; 2022 by Student Number: 190126209 &#128578;</p>
+        </div>
+        {{ request.user.id|json_script:"user_id" }}
+        <script src="{% static 'js/room_chat.js' %}"></script>
+    </body>
+</html>

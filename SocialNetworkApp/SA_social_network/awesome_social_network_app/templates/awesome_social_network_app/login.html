@@ -1,0 +1,22 @@
+{% extends "./base.html" %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+    <h1>Login Page</h1>
+    <div>
+        {% for message in messages %}
+            <h5 style="color: red">{{message}}</h5>
+        {% endfor %}
+    </div>
+
+    <form id="login_form" method="post" action="/login/">
+        {% csrf_token %}
+        Username: <input type="text" name="username" value="" size="50" placeholder="Username" />
+        <br />
+        Password: <input type="password" name="password" value="" size="50" placeholder="Password"/>
+        <br />
+        <input type="submit" value="Login" />
+    </form>
+
+{% endblock %}

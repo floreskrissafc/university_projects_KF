@@ -1,0 +1,29 @@
+{% extends "./base.html" %}
+{% load bootstrap4 %}
+
+{% block content %}
+
+    <h1>Search Page</h1>
+
+    <p>Results for the query: <i>{{ query }}</i></p>
+    <div>
+        {% if profile_list|length <= 0 %}
+
+            <p>There were no results for this query, look for other users!</p>
+
+        {% else %}
+            <ul>
+            {% for profile in profile_list %}
+            
+                <li style="background: rgb(233, 246, 214)"> 
+                    <a href ="/user_profile/{{profile.user.username}}"> @{{profile.user.username}}  </a>
+                    <img src="{{profile.userImg.url}}" width="100" height="100" />
+                </li>
+                <br>
+            {% endfor%}
+            </ul>
+        {% endif %}
+    </div>
+
+
+{% endblock %}

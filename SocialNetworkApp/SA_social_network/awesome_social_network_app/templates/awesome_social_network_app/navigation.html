@@ -1,0 +1,55 @@
+{% load static %} 
+{% load bootstrap4 %}
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <a class="navbar-brand" href="/">
+            <img src="{% static 'images/logo.png' %}" width="45" height="45" class="d-inline-block align-top" alt="Logo">
+            SuperAwesomeSocialNetwork
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        {% if user.is_authenticated %}
+            <div class="collapse navbar-collapse ">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <div id="custom-search" class="top-search-bar">
+                            <form class="form-inline my-2 my-lg-0" action="/search_username/" method="POST">
+                                {% csrf_token %}
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search for friends..." aria-label="Search" name="username">
+                                <button class="btn btn-outline-light my-2 my-sm-0" data-toggle="button" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown nav-user"> 
+                        <a href="/user_profile/{{ user.username }}" style="color:white"> 
+                            <b>{{ user.username }} </b> 
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown nav-user">
+                        <a class="nav-link" href="#" data-toggle="dropdown"  >
+                            <img src="{{ user_profile.userImg.url }}" alt="user_picture" width="50" height="50">
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right nav-user-dropdown" >
+                            <div class="nav-user-info">
+                                <h5 class="mb-0 text-white nav-user-name">{{ user.username }}</h5>
+                            </div>
+                            <a class="dropdown-item" href="../profile">Profile Settings</a>
+                            <a class="dropdown-item" href="../logout/">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        {% else %}
+            <div>
+                <ul class="navbar-nav ml-auto justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-dark btn-lg" href="../register/" role="button" aria-pressed="true">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-success active btn-lg" href="../login/" role="button" aria-pressed="true">Log In</a>
+                    </li>
+                </ul>
+            </div>
+        {% endif %}
+    </nav>

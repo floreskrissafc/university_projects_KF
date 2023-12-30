@@ -1,0 +1,77 @@
+{% extends "./base.html" %}
+{% load bootstrap4 %}
+{% load static %}
+
+{% block content %}
+<div class="container-fluid">
+
+    <div class="row">
+        <div  class="col-8" class="content">
+            <h1><b> {{ user2.username }}'s</b> Profile Page </h1>
+            <div>
+                <img src="{{ current_profile.userImg.url }}" alt="{{user2.username}}_picture" width="100" height="100">
+            </div>
+            <div>
+                <p> {{ user2.username }} has posted {{ nr_of_post }} posts</p>
+                <form action="/follow/" method="POST">
+                    {% csrf_token %}
+                    <input type="hidden" value="{{user2.username}}" name="followed">
+                    {% if user.username != user2.username %}
+                        {% if following %}
+                            <div class="container">
+                                <input class = "textInput" id="room-name-input"  type="hidden" value="{{chatroom_name }}"><br>
+                                <input class = "button btn btn-success" id="room-name-submit" type="button" value="Message @{{ user2.username }}">
+                            </div>
+                            <br>
+                            <button type="submit" class="btn btn-lg btn-primary" >Unfollow @{{ user2.username }}</button>
+                        {% else %}
+                            <button type="submit" class="btn btn-lg btn-primary" >Follow @{{ user2.username }} </button>
+                        {% endif %}
+                    {% else %}
+                        <a href="../profile" class="btn btn-primary btn-lg ">Profile Settings</a>
+                    {% endif %}
+
+                </form>
+            </div>
+            <div>
+                <div style="background-color: rgb(213, 234, 217);">
+                    <h3> Bio</h3>
+                    <p> {{ current_profile.bio }} </p>
+                </div>
+                <p>{{user2.username}} follows {{ following_count }} people</p>
+                <p>{{user2.username}} is being followed by {{ follower_count }} people</p>
+            </div>
+            <div>
+                <h4> Posts created by {{user2.username}}: </h4>
+                <ul style="list-style: none;">
+                    {% for post in posts reversed %}
+                        <li style="background: rgb(227, 227, 227)">
+                            {% if post.postImg != "" %}
+                                <img src="{{ post.postImg.url }}" alt="post_picture" width="300" height="250">
+                            {% endif %}
+                            <br>
+                            {% if post.status != None %}
+                                <p>{{ post.status }}</p>
+                            {% endif %}  
+                        </li>
+                        <br>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div  class="col-4" class="content" style="background: lightgoldenrodyellow">
+            <h4>{{ user2.username }}'s Friend List</h4>
+            <ul style="list-style-type: none;">
+                {% for friend_profile in friend_profiles  %}
+                    <br>
+                    <img src="{{ friend_profile.userImg.url }}" alt="{{friend_profile.username}}_picture" width="100" height="100">
+                    <a href="/user_profile/{{friend_profile.user.username }}"> {{friend_profile.user.username }} </a>
+                    <br>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'js/index_chat.js' %}"></script>
+{% endblock %}

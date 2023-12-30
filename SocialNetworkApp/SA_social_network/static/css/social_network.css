@@ -1,0 +1,17 @@
+/* 
+based on https://bbbootstrap.com/snippets/navigation-bar-search-and-user-icons-83384530 
+*/
+.top-search-bar {
+    padding-top: 12px;
+    padding-right: 24px;
+}
+
+.nav-user-info {
+    background-color: #4285F4;
+    line-height: 1.4;
+    padding: 12px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 2px 2px 0 0;
+} 
+

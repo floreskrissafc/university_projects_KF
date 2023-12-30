@@ -1,0 +1,73 @@
+{% extends "./base.html" %}
+{% load bootstrap4 %}
+
+{% block content %}
+    <h1> Home Page for <b>{{ user.username }}</b></h1>
+    <div class="row"> 
+        <div  class="col-8" class="content" style="background: lightcyan">
+            
+            <div style="background: lightgray">
+                <h4>Post what you are thinking or upload a picture! </h4>
+                <form id="" method="post" action="/post/" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ post_form.as_p }}
+                    <input type="submit" name="POST" value="POST" />
+                </form>
+            </div>
+            
+            <br>
+
+            <div id='feed' style="background: rgb(249, 241, 243)">
+                {% for post in post_list reversed %}
+                    <div style="background: rgb(210, 232, 245)">
+                        <span> Posted by: <a href="/user_profile/{{post.user}}">{{ post.user }} </a></span>
+                        <br>
+                        {% if post.postImg != "" %}
+                            <img src="{{ post.postImg.url }}" alt="post_picture" width="400" height="400">
+                        {% endif %}
+                        <br>
+
+                        {% if post.status != None %}
+                            <p>{{ post.status }}</p>
+                        {% endif %}
+                        
+                        <a href="/like_post?post_id={{post.id}}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Like</a>
+                        {% if post.likeCount == 0 or post.likeCount > 1 %}
+                            <p> Liked by {{ post.likeCount }} people. </p>
+                        {% else %}
+                            <p> Liked by {{ post.likeCount }} person. </p>
+                        {% endif %}   
+                    </div>
+                    <br>
+                {% endfor %}
+
+            </div>
+        </div>
+
+        <div  class="col-4"  style="background: rgb(250, 235, 229)">
+            <div class="row">
+                <h3>Follow Suggestions</h3>
+                <ul style="list-style-type: none;">
+                    {% for user_profile in suggested_user_profiles  %}
+                        <li style="background: lightgrey">
+                            <img src="{{ user_profile.userImg.url }}" alt="{{user_profile.username}}_picture" width="100" height="100">
+                            <a href="/user_profile/{{user_profile.user.username }}"> {{user_profile.user.username }} </a>
+                            <form action="/follow/" method="POST">
+                                {% csrf_token %}
+                                <input type="hidden" value="{{user_profile.user.username}}" name="followed">
+                                <button type="submit" class="btn btn-lg btn-primary" >Follow</button>
+                            </form>
+
+                        </li>
+                        <br>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+
+
+
