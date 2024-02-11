@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif
+}
+
+.menu-item {
+    width: 250px;
+    height: 50px;
+    border: 1px solid gray;
+    list-style-type: none;
+    padding: 5px;
+}
+
+.container {
+    display: flex;
+}
+
+.hover {
+    background: lightgray
+}
+
+.selected {
+    background: gold
+}
+
+/*Some custom css*/
+
+.back-button,
+.saveBtn {
+    /*    taken from https://www.w3schools.com/css/css3_buttons.asp*/
+    background-color: #078E4D;
+    /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btnLineChart {
+    background-color: #0f9e54;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+.back-button:hover,
+.btnLineChart:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+label {
+    font-size: 12px;
+}
+
+input[type="color"]:hover,
+select:hover {
+    cursor: pointer;
+}
+
+a {
+    font-size: 11px;
+    font-style: oblique;
+}
+
+/*code from https://stackoverflow.com/questions/11167281/webkit-css-to-control-the-box-around-the-color-in-an-inputtype-color */
+input[type="color"] {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    width: 20px;
+    height: 20px;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
