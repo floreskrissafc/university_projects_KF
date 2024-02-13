@@ -1,0 +1,156 @@
+country,GDP-PC-PPP,Region,country-code
+Qatar,124609.3041,Middle East & North Africa,QAT
+Luxembourg,110589.1924,Europe & Central Asia,LUX
+Singapore,96552.60261,East Asia & Pacific,SGP
+Brunei Darussalam,79789.48786,East Asia & Pacific,BRN
+Ireland,77596.35505,Europe & Central Asia,IRL
+United Arab Emirates,73137.87019,Middle East & North Africa,ARE
+Kuwait,71695.56421,Middle East & North Africa,KWT
+Switzerland,66395.85634,Europe & Central Asia,CHE
+Norway,62012.40776,Europe & Central Asia,NOR
+United States,59927.92983,North America,USA
+Iceland,55322.09013,Europe & Central Asia,ISL
+Netherlands,54503.08193,Europe & Central Asia,NLD
+Denmark,54282.54774,Europe & Central Asia,DNK
+Austria,53937.06638,Europe & Central Asia,AUT
+Saudi Arabia,53693.3697,Middle East & North Africa,SAU
+Germany,52055.30995,Europe & Central Asia,DEU
+Sweden,51878.6944,Europe & Central Asia,SWE
+Belgium,50220.86667,Europe & Central Asia,BEL
+Australia,49628.81181,East Asia & Pacific,AUS
+Bahrain,47660.71731,Middle East & North Africa,BHR
+Finland,46735.41074,Europe & Central Asia,FIN
+Canada,46723.31776,North America,CAN
+United Kingdom,45378.99774,Europe & Central Asia,GBR
+France,44255.94164,Europe & Central Asia,FRA
+Japan,41958.96216,East Asia & Pacific,JPN
+Oman,41563.63827,Middle East & North Africa,OMN
+Malta,41510.28901,Middle East & North Africa,MLT
+Italy,41200.02872,Europe & Central Asia,ITA
+New Zealand,40438.57095,East Asia & Pacific,NZL
+Spain,38888.73547,Europe & Central Asia,ESP
+Israel,38866.1107,Middle East & North Africa,ISR
+"Korea, Rep.",38824.11539,East Asia & Pacific,KOR
+Czech Republic,38019.58051,Europe & Central Asia,CZE
+Cyprus,36155.48075,Europe & Central Asia,CYP
+Slovenia,36142.79094,Europe & Central Asia,SVN
+Estonia,33675.45771,Europe & Central Asia,EST
+Lithuania,33314.74037,Europe & Central Asia,LTU
+Portugal,32777.40197,Europe & Central Asia,PRT
+Slovak Republic,32243.84951,Europe & Central Asia,SVK
+Trinidad and Tobago,31461.26406,Latin America & Caribbean,TTO
+"Bahamas, The",31155.14475,Latin America & Caribbean,BHS
+Malaysia,30025.17655,East Asia & Pacific,MYS
+Poland,29922.20498,Europe & Central Asia,POL
+Hungary,29159.12645,Europe & Central Asia,HUN
+Seychelles,29062.26285,Sub-Saharan Africa,SYC
+Greece,28579.79453,Europe & Central Asia,GRC
+Latvia,28115.34769,Europe & Central Asia,LVA
+Romania,26631.87948,Europe & Central Asia,ROU
+Croatia,26351.90704,Europe & Central Asia,HRV
+Antigua and Barbuda,24644.55188,Latin America & Caribbean,ATG
+Equatorial Guinea,24532.952,Sub-Saharan Africa,GNQ
+Panama,24472.00985,Latin America & Caribbean,PAN
+Chile,24248.86076,Latin America & Caribbean,CHL
+Uruguay,22728.13475,Latin America & Caribbean,URY
+Mauritius,22355.19052,Sub-Saharan Africa,MUS
+"Iran, Islamic Rep.",21011.28831,Middle East & North Africa,IRN
+Bulgaria,20948.19428,Europe & Central Asia,BGR
+Argentina,20843.15507,Latin America & Caribbean,ARG
+Mexico,19423.92769,Latin America & Caribbean,MEX
+Montenegro,19355.01984,Europe & Central Asia,MNE
+Libya,19056.8043,Middle East & North Africa,LBY
+Belarus,18915.93989,Europe & Central Asia,BLR
+Barbados,18229.58768,Latin America & Caribbean,BRB
+Thailand,17917.20689,East Asia & Pacific,THA
+Palau,17865.79081,East Asia & Pacific,PLW
+Botswana,17784.84904,Sub-Saharan Africa,BWA
+Gabon,17762.40864,Sub-Saharan Africa,GAB
+Iraq,17519.05422,Middle East & North Africa,IRQ
+Costa Rica,16976.18742,Latin America & Caribbean,CRI
+China,16782.20776,East Asia & Pacific,CHN
+Serbia,16433.44975,Europe & Central Asia,SRB
+Dominican Republic,16370.95618,Latin America & Caribbean,DOM
+Brazil,15662.24047,Latin America & Caribbean,BRA
+Algeria,15207.17915,Middle East & North Africa,DZA
+Suriname,15002.41986,Latin America & Caribbean,SUR
+Grenada,14654.86644,Latin America & Caribbean,GRD
+Maldives,14523.99637,South Asia,MDV
+Colombia,14507.26125,Latin America & Caribbean,COL
+Peru,13771.45995,Latin America & Caribbean,PER
+Bosnia and Herzegovina,13735.0785,Europe & Central Asia,BIH
+St. Lucia,13505.45477,Latin America & Caribbean,LCA
+South Africa,13438.28289,Sub-Saharan Africa,ZAF
+Paraguay,12971.68385,Latin America & Caribbean,PRY
+Albania,12930.14003,Europe & Central Asia,ALB
+Sri Lanka,12878.58867,South Asia,LKA
+Lebanon,12813.86955,Middle East & North Africa,LBN
+Mongolia,12791.57934,East Asia & Pacific,MNG
+Indonesia,12279.18328,East Asia & Pacific,IDN
+Tunisia,12047.05114,Middle East & North Africa,TUN
+St. Vincent and the Grenadines,11782.722,Latin America & Caribbean,VCT
+"Egypt, Arab Rep.",11742.05009,Middle East & North Africa,EGY
+Ecuador,11501.01029,Latin America & Caribbean,ECU
+Namibia,11104.41938,Sub-Saharan Africa,NAM
+Fiji,10329.43879,East Asia & Pacific,FJI
+Eswatini,10249.51169,Sub-Saharan Africa,SWZ
+Bhutan,10173.05107,South Asia,BTN
+Jordan,9241.513754,Middle East & North Africa,JOR
+Jamaica,8974.33982,Latin America & Caribbean,JAM
+Ukraine,8693.693649,Europe & Central Asia,UKR
+Belize,8352.944346,Latin America & Caribbean,BLZ
+Philippines,8340.331331,East Asia & Pacific,PHL
+Morocco,8261.060852,Middle East & North Africa,MAR
+Guatemala,8166.857467,Latin America & Caribbean,GTM
+Guyana,8142.576098,Latin America & Caribbean,GUY
+El Salvador,7972.782895,Latin America & Caribbean,SLV
+Bolivia,7480.077141,Latin America & Caribbean,BOL
+India,7168.992484,South Asia,IND
+Cabo Verde,7005.958684,Sub-Saharan Africa,CPV
+Vietnam,6857.984044,East Asia & Pacific,VNM
+Angola,6650.58494,Sub-Saharan Africa,AGO
+Samoa,6495.387727,East Asia & Pacific,WSM
+Tonga,6321.606933,East Asia & Pacific,TON
+Nigeria,5887.573078,Sub-Saharan Africa,NGA
+Nicaragua,5687.231512,Latin America & Caribbean,NIC
+"Congo, Rep.",5614.398974,Sub-Saharan Africa,COG
+Pakistan,5241.938741,South Asia,PAK
+Honduras,4916.723792,Latin America & Caribbean,HND
+Sudan,4880.261517,Sub-Saharan Africa,SDN
+Ghana,4457.355846,Sub-Saharan Africa,GHA
+Zambia,4090.12004,Sub-Saharan Africa,ZMB
+Mauritania,4023.499238,Sub-Saharan Africa,MRT
+Cambodia,4019.679985,East Asia & Pacific,KHM
+Bangladesh,3998.419424,South Asia,BGD
+Cameroon,3644.801096,Sub-Saharan Africa,CMR
+Senegal,3556.137758,Sub-Saharan Africa,SEN
+"Micronesia, Fed. Sts.",3497.917541,East Asia & Pacific,FSM
+Kenya,3258.154499,Sub-Saharan Africa,KEN
+Lesotho,3132.495534,Sub-Saharan Africa,LSO
+Vanuatu,3123.565004,East Asia & Pacific,VUT
+Tanzania,3090.494371,Sub-Saharan Africa,TZA
+Nepal,2874.983331,South Asia,NPL
+Zimbabwe,2825.725122,Sub-Saharan Africa,ZWE
+Comoros,2812.034747,Sub-Saharan Africa,COM
+"Yemen, Rep.",2645.308383,Middle East & North Africa,YEM
+"Gambia, The",2464.773716,Sub-Saharan Africa,GMB
+Guinea,2369.51917,Sub-Saharan Africa,GIN
+Benin,2276.59573,Sub-Saharan Africa,BEN
+Mali,2221.757886,Sub-Saharan Africa,MLI
+Rwanda,2078.052755,Sub-Saharan Africa,RWA
+Uganda,1945.358604,Sub-Saharan Africa,UGA
+Afghanistan,1934.636754,South Asia,AFG
+Chad,1929.472752,Sub-Saharan Africa,TCD
+Ethiopia,1897.249077,Sub-Saharan Africa,ETH
+Burkina Faso,1866.514733,Sub-Saharan Africa,BFA
+Madagascar,1813.515493,Sub-Saharan Africa,MDG
+Guinea-Bissau,1734.714909,Sub-Saharan Africa,GNB
+Togo,1691.534408,Sub-Saharan Africa,TGO
+Sierra Leone,1544.42929,Sub-Saharan Africa,SLE
+Mozambique,1418.485398,Sub-Saharan Africa,MOZ
+Liberia,1293.415934,Sub-Saharan Africa,LBR
+Malawi,1269.644595,Sub-Saharan Africa,MWI
+Niger,1012.859196,Sub-Saharan Africa,NER
+"Congo, Dem. Rep.",888.67728,Sub-Saharan Africa,COD
+Central African Republic,821.2162029,Sub-Saharan Africa,CAF
+Burundi,737.9785829,Sub-Saharan Africa,BDI
