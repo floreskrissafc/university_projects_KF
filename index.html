@@ -1,1345 +1,347 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scrollable Bar Chart</title>
-
-    <script src="https://code.highcharts.com/stock/highstock.js"></script>
-    <script src="https://code.highcharts.com/maps/modules/map.js"></script>
-    <script src="https://code.highcharts.com/maps/modules/data.js"></script>
-
-    <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
-    <script src="https://code.highcharts.com/stock/modules/accessibility.js"></script>
-    <script src="https://code.highcharts.com/modules/export-data.js"></script>
-
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <title>Kriss' Flores Portfolio</title>
+    <link rel="stylesheet" href="styles/basic.css">
+    <link rel="stylesheet" href="styles/footer.css">
 
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            /* Optional but helps with layout */
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        figure {
-            margin: 0;
-            padding: 0;
-        }
-
-        .centered_main_container_blue {
-            background-color: #202b6e;
-            display: flex;
-            justify-content: center;
-        }
-
-        #container_for_pie_chart {
-            flex: 1;
-        }
-
-
-        #paragraph-map-chart-container {
-            flex: 1;
-            height: 100%;
-            width: 90%;
-            align-content: center;
-
-        }
-
-        .centered_main_container {
-            display: flex;
-            justify-content: center;
-        }
-
-        #paragraph-pie-chart-container {
-            flex: 1;
-            height: 100%;
-            max-width: 400px;
-            align-content: center;
-            margin-right: 2em;
-        }
-
-
-        .highcharts-figure {
-            min-width: 320px;
-            max-width: 660px;
-        }
-
-        .section_title {
+        #description {
+            margin: auto;
+            width: 95%;
+            font-size: 2.1vh;
+            margin-bottom: 6vh;
             text-align: center;
+            line-height: 1.7;
+            font-weight: lighter;
+        }
+
+        #title-message {
+            font-size: 6vw;
+            margin-bottom: 6vh;
+            font-weight: 900;
+        }
+
+        #title-name {
+            font-size: 2.3vw;
+            margin-bottom: 6vh;
             font-weight: bolder;
-            margin-bottom: 2em;
-            font-size: 1.3em;
-            color: #202B6E;
         }
 
-        .section_info {
+        p.left-p {
             text-align: left;
-            font-size: 20px;
-            line-height: 1.6;
-            color: #202B6E;
-            margin-bottom: 2em;
+            align-self: left;
+            align-items: left;
+            justify-self: left;
+            margin-bottom: 3vh;
+            font-size: 2vh;
+
         }
 
-        .map_container {
-            height: 500px;
-            min-width: 310px;
-            margin: 0 auto;
+        .title {
+            font-size: 3.7vw;
         }
 
-        #map-container {
-            /*            height: 500px;*/
-            width: 85%;
-            max-width: 1000px;
-            margin: 0 auto;
-            margin-bottom: 1em;
+        hr {
+            color: red;
+            border-color: white;
+            opacity: 30%;
+
         }
 
-        #centered_container_map {
-            flex-direction: column;
-            /*            background-color: forestgreen;*/
-            padding-bottom: 0px;
-            padding-top: 0px;
-        }
-
-        #bar-chart-main-container {
-            flex: 1;
+        .row {
+            height: 40vw;
+            width: 100%;
+            margin-bottom: 5vh;
             display: flex;
-            flex-direction: column;
-            max-width: 75%;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /*
-        .container {
-            display: flex;
-            width: 75%;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-*/
-
-
-        @media (max-width: 850px) {
-            .spaced_between_cols {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: 100%;
-                margin-bottom: 1em;
-            }
-
-            .spaced_between_cols2 {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: 100%;
-                margin-bottom: 1em;
-            }
-
-            .container_for_pie_chart {
-                /*                flex: 1;*/
-                width: 100%;
-                margin-bottom: 1em;
-            }
-
-            #formatted-number {
-                font-size: 5vw;
-                font-weight: bolder;
-                margin-bottom: 3vh;
-            }
-
-            .center_rect {
-                margin-top: 1em;
-            }
-
-            #container_for_bar_chart {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                justify-content: space-between;
-                align-items: center;
-                padding-top: 100px;
-                padding-bottom: 100px;
-            }
-
-            #bar_chart {
-                max-width: 90%;
-            }
-
-            #paragraph-bar-chart-container {
-                width: 70%;
-                margin-top: 2em;
-                align-content: center;
-            }
-
-            #title_2 {
-                font-weight: bolder;
-                font-size: clamp(16px, 4vw, 40px);
-                margin-top: 1em;
-                margin-bottom: 0.1em;
-                color: white;
-                text-align: center;
-            }
-
-            .pie_chart_title {
-                font-size: clamp(16px, 1.5vw, 16px);
-                text-align: center;
-                margin-bottom: 1em;
-                color: #202b6e;
-                font-weight: 600;
-            }
-
-
-
-        }
-
-        @media (min-width: 851px) {
-            .spaced_between_cols {
-                display: flex;
-                justify-content: space-between;
-                width: 85%;
-                margin-bottom: 3em;
-                /*                background-color: aqua;*/
-            }
-
-            .spaced_between_cols2 {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                width: 85%;
-                margin-bottom: 3em;
-            }
-
-            .container_for_pie_chart {
-                flex: 1;
-            }
-
-            .center_rect {
-                flex: 3;
-                margin-left: 15px;
-            }
-
-            #formatted-number {
-                font-size: clamp(16px, 2vw, 25px);
-                max-width: 100%;
-                font-weight: bolder;
-                margin-bottom: 3vh;
-                text-align: center;
-            }
-
-            #container_for_bar_chart {
-                display: flex;
-                flex-direction: row;
-                width: 100%;
-                justify-content: space-between;
-                align-items: center;
-                padding-top: 10px;
-                padding-bottom: 100px;
-            }
-
-            #bar_chart {
-                flex: 2;
-                margin-right: 20px;
-            }
-
-            #paragraph-bar-chart-container {
-                flex: 1;
-                height: 100%;
-                margin: 20px;
-                max-width: 500px;
-                align-content: center;
-            }
-
-            #title_2 {
-                font-size: clamp(16px, 4vw, 40px);
-                margin-top: 1em;
-                margin-bottom: 1em;
-                color: white;
-                text-align: center;
-            }
-
-            .pie_chart_title {
-                font-size: clamp(12px, 1.5vw, 20px);
-                text-align: center;
-                margin-bottom: 1em;
-                color: #202b6e;
-                font-weight: 600;
-            }
-
-        }
-
-        .container {
-            display: flex;
-            width: 75%;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 100px;
-            padding-bottom: 100px;
-        }
-
-
-
-        #paragraph-bar-chart-container p,
-        .text_blue {
-            color: white;
-            text-align: left;
-            font-size: 20px;
-            line-height: 1.6;
-            margin-bottom: 1em;
-        }
-
-        .rounded_rectangle_info {
-            background-color: #F2F2F2;
-            flex: 1;
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            align-content: center;
-            padding-bottom: 3em;
-            padding-top: 3em;
-            transition: transform 0.3s ease;
-        }
-
-        .hover-effect:hover {
-            transform: scale(1.1);
-            /* Increase size by 10% */
-        }
-
-
-
-        .rect_img {
-            width: 35%;
-            max-width: 75px;
-            margin-bottom: 1em;
-        }
-
-        .rect_text {
-            font-size: 18px;
-            color: #202B6E;
-            /*            background-color: blueviolet;*/
-            width: 70%;
-            text-align: center;
-        }
-
-        .page_description {
-            display: flex;
-            flex-direction: column;
-        }
-
-        #navigation {
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            padding-bottom: 0.5em;
-            padding-top: 0.5em;
-        }
-
-        #navigation_container {
-            width: 75%;
-            display: flex;
-            flex-direction: row;
             justify-content: space-between;
         }
 
-        #logo_container {
-            max-width: 200px;
+        .col {
+            width: 48%;
+            background-color: antiquewhite;
+            height: 100%;
+            display: flex;
+            border-radius: 1vw;
         }
 
-        #logo {
+        .col-button {
+            margin: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+            max-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+        }
+
+        .col:hover {
+            opacity: 50%;
+        }
+
+        .col-button p {
+            color: black;
+        }
+
+        .project-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-height: 70%;
+            padding-top: 1vw;
+            max-width: 100%;
+            align-self: center;
+            min-height: 70%;
+        }
+
+        .project-pic {
+            max-height: 100%;
             max-width: 100%;
         }
 
-        #navigation_buttons {
+        .project-info {
+            height: auto;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-content: space-between;
-        }
-
-        #navigation_buttons p {
-            font-size: 18px;
-            margin-left: 0.5em;
-            display: flex;
-            align-self: center;
-            font-weight: 600;
-            color: #202B6E;
+            flex-direction: column;
+            padding-left: 2vw;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+            background-color: rgb(34, 34, 36);
+            min-height: 20%;
+            border-bottom-left-radius: 1vw;
+            border-bottom-right-radius: 1vw;
 
         }
 
-        a {
+        .project-info p {
+            font-family: Arial, Helvetica, sans-serif;
             color: white;
-        }
-
-        #title_1 {
-            font-size: clamp(16px, 4vw, 40px);
-            margin-top: 1em;
-            margin-bottom: 1em;
-        }
-
-        p {
             text-align: left;
         }
+
+
+        .project-title {
+            font-size: 2.5vw;
+            font-weight: 800;
+            margin-bottom: 0.5vh;
+        }
+
+        .project-description {
+            font-size: 1.5vw;
+        }
+
+        #recaller_background {
+            background-color: darkblue;
+        }
+
+        .black_background {
+            background-color: black;
+        }
+
+        #clock {
+            border-radius: 20em;
+        }
+
     </style>
 </head>
 
 <body>
+    <div class="centered-content">
 
-    <nav id="navigation">
-        <div id="navigation_container">
-            <div id="logo_container">
-                <img id="logo" src="logo.png" alt="Inrav logo">
-            </div>
+        <div id="logo-container">
+            <a href="#"> <img id="logo" src="assets/logo.png"></a>
+        </div>
 
-            <div id="navigation_buttons">
-<!--
-                <p>Home</p>
-                <p>About Us</p>
-                <p>Cases Dashboard</p>
-                <p>Legal Frameworks</p>
-                <p>Donations</p>
-                <p>Contact</p>
--->
+
+        <p id="title-message">Passionate to Learn, Thrive, and Showcase the Art of Code</p>
+
+        <p id='description'>Greetings! I'm a Computer Science enthusiast in the final stretch of my Bachelor's journey. Hailing from a Mechanical Engineering background, I'm passionate about crafting engaging learning experiences through game development and interactive design.</p>
+
+        <div id="my-works-container">
+
+            <p class="left-p title" style="font-size: 3.7vw;">My Works</p>
+
+            <hr>
+
+            <p class="left-p" style="margin-top: 4vh">These are some of the projects I developed during my studies at the University of London.</p>
+
+            <div id="works-container">
+
+                <div class="row">
+
+                    <div class="col">
+                        <a class="col-button" href="koios_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/koios.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Koios</p>
+                                <p class="proj-text project-description">Language Learning App, React-Native, iOS, Android, Mobile</p>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="col" id="recaller_background">
+                        <a class="col-button" href="recaller_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/recaller.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Recaller</p>
+                                <p class="proj-text project-description">Language Learning App, React-Native, iOS, Android, Mobile</p>
+                            </div>
+
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="col black_background">
+                        <a class="col-button" href="angry_birds_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/angry_birds.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Angry Birds Clone</p>
+                                <p class="proj-text project-description">Gaming, p5.js, Matter.js</p>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="col black_background">
+                        <a class="col-button" href="asteriods_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/asteroids.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Asteroid Game Clone</p>
+                                <p class="proj-text project-description">Gaming, p5.js</p>
+                            </div>
+
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col black_background">
+                        <a class="col-button" href="bouncing_balls_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/gravity.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Gravity on bodies</p>
+                                <p class="proj-text project-description">Animations, p5.js, forces, friction.</p>
+                            </div>
+
+                        </a>
+                    </div>
+
+                    <div class="col black_background">
+                        <a class="col-button" href="noisy_font_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/noise.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Noise in Font</p>
+                                <p class="proj-text project-description">Animations, p5.js, noise</p>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col black_background">
+                        <a class="col-button" href="data_visualization_entry_point.html">
+                            <div class="project-img">
+                                <img id="clock" class="project-pic" src="assets/data_visualization.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Data Visualization</p>
+                                <p class="proj-text project-description">Graphs and Charts with p5.js</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col black_background">
+                        <a class="col-button" href="follow_the_mouse_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/follow_mouse.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Follow the mouse</p>
+                                <p class="proj-text project-description">Animations, p5.js, location, velocity, acceleration.</p>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col black_background">
+                        <a class="col-button" href="plinko_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/plinko.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Plinko</p>
+                                <p class="proj-text project-description">Animations, p5.js, Matter.js, forces on bodies</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col black_background">
+                        <a class="col-button" href="solar_system_entry_point.html">
+                            <div class="project-img">
+                                <img class="project-pic" src="assets/solar_orbits.png">
+                            </div>
+                            <div class="project-info">
+                                <p class="proj-text project-title">Solar Orbits</p>
+                                <p class="proj-text project-description">Animations, p5.js, rotation, translation, lights </p>
+                            </div>
+
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-    </nav>
 
-    <div class="centered_main_container_blue">
-        <div class="container page_description">
-            <p class="text_blue">The <bold>Forfeited Assets Dashboard</bold> is an interactive database powered by the Venezuelan Asset Recovery Initiative (INRAV) that enables tracking of the list of assets recovered in U.S. corruption cases involving Venezuelan officials linked to the governments of Hugo Chávez and Nicolás Maduro. The <bold>Forfeited Assets Dashboard</bold> serves as a benchmark to assess how much money could support <bold>"A Fund for Venezuela"</bold>, a special fund intended to use these resources for the benefit of the Venezuelan population.</p>
-
-            <p class="text_blue">The information in the <bold>Forfeited Assets Dashboard</bold> was generated in partnership with <a href="https://transparenciave.org/project/quienes-somos/" target="_blank"><i>Transparencia Venezuela</i></a> and is based on research from the <bold><a href="https://corruptometro.org/" target="_blank">Corruptómetro</a></bold>, an interactive tool that monitors cases and investigations initiated by official bodies within and outside Venezuela, revealing the involvement of high-ranking officials, its spread to other countries, and the significant impact on the population.</p>
-
-            <p class="text_blue">The United States hosts the highest number of Venezuelan corruption cases outside Venezuela. As of October 2024, the number of cases has reached 60.</p>
-        </div>
     </div>
 
-    <div class="centered_main_container">
-        <div class="container" id="centered_container_map">
-            <div id="paragraph-map-chart-container">
-                <p id="title_1" class="section_title">Amounts Seized in the US</p>
-            </div>
+    <footer id="footer">
 
-            <div class="spaced_between_cols">
+        <div id="footer-icons-container" class="footer-content">
 
-                <div class="rounded_rectangle_info hover-effect">
-                    <img class="rect_img" src="integrity.png" alt="Integrity image">
-                    <!--                    <div> Icons made by <a href="https://www.flaticon.com/authors/hajicon" title="HAJICON"> HAJICON </a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a></div>-->
-                    <p class="rect_text">As of 2024, there is a total of <b>60 legal cases </b>opened by the Department of Justice. </p>
+            <a href="https://www.linkedin.com/in/krissafc/" target="_blank">
+                <img class="footer-icon" src="assets/linkedin_logo.png">
+            </a>
 
-                </div>
-
-                <div class="rounded_rectangle_info center_rect hover-effect">
-                    <!--                    <a href="https://www.flaticon.com/free-icons/money" title="money icons">Money icons created by Smashicons - Flaticon</a>-->
-                    <img class="rect_img" src="money-bag.png" alt="money bag">
-
-                    <p id="formatted-number" class="rect_text"></p>
-
-                    <p class="rect_text">Is the total estimated amount of money to be forfeited for these cases.</p>
-
-                </div>
-
-            </div>
-
-            <div id="map-container"></div>
-
-            <div id="paragraph-map-chart-container">
-                <p class="section_info">We aim to provide our users a comprehensive view of the accused individuals and the monetary value of the alleged misappropriated assets.</p>
-            </div>
+            <a href="https://github.com/floreskrissafc/university_projects_KF" target="_blank">
+                <img class="footer-icon" style="margin-right: 0;" src="assets/github-logo.png">
+            </a>
 
         </div>
-    </div>
 
-    <div class="centered_main_container_blue">
+        <div class="footer-content">
 
-        <div id="bar-chart-main-container">
-
-            <div id="paragraph-map-chart-container">
-                <p id="title_2">Forfeited assets value per case</p>
-            </div>
-
-            <div id="container_for_bar_chart">
-
-                <div id="bar_chart"></div>
-
-                <div id="paragraph-bar-chart-container">
-                    <p>We strive to ascertain the availability of
-                        monetary funds from the total forfeited assets,
-                        with the intention of establishing a secure
-                        reserve designated for eventual repatriation to
-                        Venezuela.</p>
-
-                    <p>Each bar in this chart represents an accused
-                        person, providing clarity on the scale of their
-                        alleged financial misconduct.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="centered_main_container">
-
-        <div class="container" id="centered_container_map">
-
-            <div id="paragraph-map-chart-container">
-                <p id="title_1" class="section_title">Asset Recovery Breakdown</p>
-            </div>
-
-            <div id="paragraph-map-chart-container">
-                <p class="section_info">Discover the distribution of total cases across the United States by state with these interactive pie charts. Dive deeper into each state’s impact by exploring the proportion of recovered funds associated with each location, highlighting the financial scope and geographical reach of recovery efforts nationwide.</p>
-            </div>
-
-            <div class="spaced_between_cols2">
-
-                <div class="container_for_pie_chart">
-
-                    <h4 class="pie_chart_title">Percentage of case numbers by State</h4>
-                    <figure class="highcharts-figure">
-                        <div id="pie_chart1"></div>
-                    </figure>
-
-                </div>
-
-                <div class="container_for_pie_chart">
-
-                    <h4 class="pie_chart_title">Percentage of money involved by State</h4>
-                    <figure class="highcharts-figure">
-                        <div id="pie_chart2"></div>
-                    </figure>
-
-
-                </div>
-
-            </div>
-
-
+            <p class="">Kriss Flores © <a href="INRAV/index.html" target="_blank" style="text-decoration: none;">2023</a></p>
 
         </div>
-    </div>
 
-    <script>
-        let dataForPlot = [];
+    </footer>
 
-        const cases = [{
-                acussed: 'Víctor Fossi Grieco',
-                moneyAmount: 6452880,
-                caseID: "0:19-cr-60280-CMA",
-                state: "FL"
-            },
-
-            {
-                accused: 'Álvaro Pulido Vargas, José Gregorio Vielma Mora, Emmanuel Enrique Rubio González, Carlos Rolando Lizcano Manrique, Ana Guillermo Luis',
-                moneyAmount: 1607626307.19,
-                caseID: "21-cr-20509",
-                state: "FL"
-            },
-
-            {
-                accused: 'Álex Naim Saab Morán y Álvaro Pulido Vargas',
-                moneyAmount: 362692197.66,
-                caseID: "19-cr-20450",
-                state: "FL"
-            },
-
-            {
-                accused: 'Carmelo Antonio Urdaneta Aquí',
-                moneyAmount: 49265050.85,
-                caseID: "1:18-cr-20685-KMW",
-                state: "FL"
-            },
-
-            {
-                accused: "Natalino D'Amato",
-                moneyAmount: 45986230.1,
-                caseID: "1:20-cr-20241-KMW",
-                state: "FL"
-            },
-
-            {
-                accused: "Francisco Illarramendi",
-                moneyAmount: 25844834,
-                caseID: "3:11-cr-0041",
-                state: "CT"
-            },
-
-            {
-                accused: "David Rivera y Esther Nuhfer",
-                moneyAmount: 23750000,
-                caseID: "3:11-cr-0041",
-                state: "FL"
-            },
-
-            {
-                accused: "Ernesto Luján",
-                moneyAmount: 18514560,
-                caseID: "13-cr-00671",
-                state: "NY"
-            },
-
-            {
-                accused: "José Alejandro Hurtado",
-                moneyAmount: 11896743,
-                caseID: "13-cr-673",
-                state: "NY"
-            },
-
-            {
-                accused: "Darwin Enrique Padron-Acosta",
-                moneyAmount: 9052397.73,
-                caseID: "16-cr-00437",
-                state: "TX"
-            },
-
-            {
-                accused: "José Luis Ramos Castillo",
-                moneyAmount: 7812315.15,
-                caseID: "4:15-cr-00636",
-                state: "TX"
-            },
-
-            {
-                accused: "Tomás Alberto Clarke Bethancourt",
-                moneyAmount: 5787824,
-                caseID: "13-cr-670",
-                state: "NY"
-            },
-
-            {
-                accused: "Jesús Ramón Veroes",
-                moneyAmount: 5500000,
-                caseID: "19-cr-20351",
-                state: "FL"
-            },
-
-            {
-                accused: "Luis Alberto Chacín Haddad",
-                moneyAmount: 5500000,
-                caseID: "1:19-CR-20351-CMA",
-                state: "FL"
-            },
-
-            {
-                accused: "Lennys Lisoleth Rangel Soto",
-                moneyAmount: 5000000,
-                caseID: "1:19-cr-20726-JEM",
-                state: "FL"
-            },
-
-            {
-                accused: "Edoardo Orsoni",
-                moneyAmount: 4500000,
-                caseID: "19-cr-20725",
-                state: "FL"
-            },
-
-            {
-                accused: "Fernando Ardila Rueda",
-                moneyAmount: 4469756.04,
-                caseID: "17-cr-00515",
-                state: "TX"
-            },
-
-            {
-                accused: "Benito Chinea",
-                moneyAmount: 3636432,
-                caseID: "1:14-cr-00240-DLC",
-                state: "NY"
-            },
-
-            {
-                accused: "Jorge Nóbrega",
-                moneyAmount: 3783337.93,
-                caseID: "1:21-cr-20442-PCH-1/",
-                state: "FL"
-            },
-
-            {
-                accused: "Karina del Carmen Nuñez Arias",
-                moneyAmount: 3238720.19,
-                caseID: "16-cr-00436",
-                state: "TX"
-            },
-
-            {
-                accused: "Juan José Hernández Comerma",
-                moneyAmount: 3000000,
-                caseID: "17-cr-00005",
-                state: "TX"
-            },
-
-            {
-                accused: "Carlos Enrique Urbano Fermín",
-                moneyAmount: 3000000,
-                caseID: "20-cr-20163",
-                state: "FL"
-            },
-
-            {
-                accused: "Hjalmar Gibelli Gómez, Fabrizio Della Polla De-Simone",
-                moneyAmount: 1820981.05,
-                caseID: "4:17-cv-02920-SNLJ",
-                state: "MO"
-            },
-
-            {
-                accused: "Tulio Aníbal Farías",
-                moneyAmount: 1500000,
-                caseID: "20-cr-00089",
-                state: "TX"
-            },
-
-            {
-                accused: "José Orlando Camacho",
-                moneyAmount: 1318648,
-                caseID: "17-cr-00394",
-                state: "TX"
-            },
-
-            {
-                accused: "Juan Carlos Horna Napolitano",
-                moneyAmount: 1250000,
-                caseID: "3:11-cr-00086-SRU",
-                state: "CT"
-            },
-
-            {
-                accused: "Juan Carlos Castillo Rincón",
-                moneyAmount: 1061000,
-                caseID: "18-cr-00200",
-                state: "TX"
-            },
-
-            {
-                accused: "Jaime Alberto Marin Zamora",
-                moneyAmount: 1000000,
-                caseID: "09-CR-20140",
-                state: "FL"
-            },
-
-            {
-                accused: "Rafael Enrique Pinto-Franceschi",
-                moneyAmount: 985416.6,
-                caseID: "19-CR-00135",
-                state: "TX"
-            },
-
-            {
-                accused: "Iván Alexis Guédez",
-                moneyAmount: 978339.5,
-                caseID: "4:18-cr-00611",
-                state: "TX"
-            },
-
-            {
-                accused: "Charles Quintard Beach III",
-                moneyAmount: 833452,
-                caseID: "17-cr-00006",
-                state: "TX"
-            },
-
-            {
-                accused: "Alfonso Eliezer Gravina Muñoz",
-                moneyAmount: 590446,
-                caseID: "15-cr-00637",
-                state: "TX"
-            },
-
-            {
-                accused: "Alejandro Javier Marín",
-                moneyAmount: 547911,
-                caseID: "1:19-cr-00144-AKH",
-                state: "NY"
-            },
-
-            {
-                accused: "Moisés Abraham Millan Escobar",
-                moneyAmount: 533578.13,
-                caseID: "16-cr-009",
-                state: "TX"
-            },
-
-            {
-                accused: "Bruce Bagley",
-                moneyAmount: 474000,
-                caseID: "1:19-cr-00765-JSR",
-                state: "NY"
-            },
-
-            {
-                accused: "Laymar Giosse Peña Torrealba",
-                moneyAmount: 332308.47,
-                caseID: "4:19-cr-00186",
-                state: "TX"
-            },
-
-            {
-                accused: "Juan Carlos Guillén Zerpa",
-                moneyAmount: 315000,
-                caseID: "16-17407",
-                state: "CT"
-            },
-
-            {
-                accused: "Benny Palmeri Bacchi",
-                moneyAmount: 300000,
-                caseID: "1:13-cr-20930-UU",
-                state: "FL"
-            },
-
-            {
-                accused: "Franz Herman Muller-Huber",
-                moneyAmount: 263402.83,
-                caseID: "19-CR-00135",
-                state: "TX"
-            },
-
-            {
-                accused: "Franklin Durán",
-                moneyAmount: 175000,
-                caseID: "1:07-cr-20999-JAL",
-                state: "FL"
-            },
-
-            {
-                accused: "Christian Javier Maldonado Barillas",
-                moneyAmount: 165000,
-                caseID: "15-cr-00635",
-                state: "TX"
-            },
-
-            {
-                accused: "Joseph DeMeneses",
-                moneyAmount: 2670612,
-                caseID: "1:14-cr-00240-DLC",
-                state: "NY"
-            },
-
-            {
-                accused: "María De Los Ángeles González De Hernández",
-                moneyAmount: 8347849,
-                caseID: "1:13-cr-00901-PAE",
-                state: "NY"
-            },
-
-            {
-                accused: "Darwin Enrique Padron-Acosta",
-                moneyAmount: 9052397.73,
-                caseID: "4:16-cr-00437",
-                state: "TX"
-            },
-
-            {
-                accused: "Alejandro José Andrade Cedeño",
-                moneyAmount: 1000000000,
-                caseID: "17-cr-80242",
-                state: "FL"
-            },
-
-            {
-                accused: "Gabriel Arturo Jiménez Aray",
-                moneyAmount: 38000000,
-                caseID: "18-cr-80054",
-                state: "FL"
-            },
-
-            {
-                accused: "Raul Gorrin Belisario",
-                moneyAmount: 79000000,
-                caseID: "18-cr-80160",
-                state: "FL"
-            },
-
-            {
-                accused: "Claudia Patricia Diaz Guillen",
-                moneyAmount: 136752007.46,
-                caseID: "18-cr-80160",
-                state: "FL"
-            },
-
-            {
-                accused: "Naman Wakil",
-                moneyAmount: 50000000,
-                caseID: "1:21-cr-20406-KMW",
-                state: "FL"
-            },
-
-            {
-                accused: "Roberto de Jesús Soto García",
-                moneyAmount: 206250,
-                caseID: "1:15-cr-00765-PAC",
-                state: "NY"
-            },
-
-            {
-                accused: "Abraham Edgardo Ortega",
-                moneyAmount: 12000000,
-                caseID: "1:18-cr-20685-KMW",
-                state: "FL"
-            },
-
-            {
-                accused: "Francisco Convit",
-                moneyAmount: 45585667.46,
-                caseID: "18-cr-20685",
-                state: "FL"
-            },
-
-            {
-                accused: "Gustavo Adolfo Hernández Frieri",
-                moneyAmount: 12300000,
-                caseID: "1:18-cr-20685-KMW",
-                state: "FL"
-            },
-
-            {
-                accused: "Matthias Krull",
-                moneyAmount: 600000,
-                caseID: " 1:18-cr-20682-CMA",
-                state: "FL"
-            },
-
-            {
-                accused: "Álvaro Ledo Nass",
-                moneyAmount: 11510425,
-                caseID: "1:23-cr-20089-KMW",
-                state: "FL"
-            },
-
-            {
-                accused: "José Luis De Jongh Atencio",
-                moneyAmount: 8887759.62,
-                caseID: "20-cr-00305",
-                state: "TX"
-            },
-
-            {
-                accused: "Abraham José Shiera Bastidas",
-                moneyAmount: 19269770.05,
-                caseID: "4:15-cr-00654",
-                state: "TX"
-            },
-
-            {
-                accused: "Roberto Enrique Rincón Fernández",
-                moneyAmount: 51251219.23,
-                caseID: "15-cr-00654",
-                state: "TX"
-            },
-
-            {
-                accused: "César David Rincón Godoy",
-                moneyAmount: 7033504.71,
-                caseID: "4:17-cr-00514",
-                state: "TX"
-            },
-
-            {
-                accused: "Luis Carlos De León Pérez",
-                moneyAmount: 18118783.15,
-                caseID: "17-cr-514",
-                state: "TX"
-            },
-
-            {
-                accused: "Jhonnathan Teodoro Marin Sanguino",
-                moneyAmount: 3800000,
-                caseID: " 1:22-cr-20164-RNS",
-                state: "FL"
-            },
-
-            {
-                accused: "Luis Díaz Jr y Luis Javier Díaz",
-                moneyAmount: 101346285.42,
-                caseID: "1:17-cr-00077-WHP",
-                state: "NY"
-            },
-
-            {
-                accused: "Rixon Moreno Oropeza",
-                moneyAmount: 32000000,
-                caseID: "22-cr-20391",
-                state: "FL"
-            },
-
-            {
-                accused: "Orlando Alfonso Contreras Saab",
-                moneyAmount: 5947188,
-                caseID: "  23-cr-20364",
-                state: "FL"
-            },
-
-            {
-                accused: "José Manuel González Testino",
-                moneyAmount: 0,
-                caseID: "4:19-cr-00341",
-                state: "TX"
-            },
-        ];
-
-        let totalMoneyInvolved = 0;
-        let statesCaseCount = {
-            FL: 27,
-            TX: 30,
-            NY: 10,
-            CT: 3,
-            MO: 1
-        };
-        let statesMoneyCount = {};
-
-        cases.sort((a, b) => b.moneyAmount - a.moneyAmount);
-
-        for (let i = 0; i < cases.length; i++) {
-            dataForPlot.push({
-                name: cases[i].accused, // x-value
-                y: cases[i].moneyAmount, // y-value
-                caseID: cases[i].caseID // Tooltip info
-            });
-
-            totalMoneyInvolved += cases[i].moneyAmount;
-            let state = cases[i].state;
-            //            if (statesCaseCount[state]) {
-            //                statesCaseCount[state]++;
-            //            } else {
-            //                statesCaseCount[state] = 1;
-            //            }
-
-            if (statesMoneyCount[state]) {
-                statesMoneyCount[state] += cases[i].moneyAmount;
-            } else {
-                statesMoneyCount[state] = cases[i].moneyAmount;
-            }
-        }
-
-        dataForPieChart1 = [];
-
-        dataForPieChart2 = [];
-
-        for (const state in statesCaseCount) {
-            dataForPieChart1.push({
-                name: state,
-                y: statesCaseCount[state]
-            })
-        }
-
-        for (const state in statesMoneyCount) {
-            dataForPieChart2.push({
-                name: state,
-                y: statesMoneyCount[state]
-            })
-        }
-
-        let totalMoney = "$" + totalMoneyInvolved.toLocaleString("en-US");
-
-        document.getElementById("formatted-number").textContent = totalMoney;
-
-        function adjustYAxisMax(chart) {
-            const visibleData = chart.series[0].data.filter(point => !point.visible); // Get the currently visible data
-            if (visibleData.length > 0) {
-                const yValues = visibleData.map(point => point.y); // Extract y-values
-                const maxVisibleValue = Math.max(...yValues); // Find the max value in visible data
-                chart.yAxis[0].update({
-                    max: maxVisibleValue * 1.1 // Set max to 10% above the max value
-                });
-            }
-        }
-
-        const bar_chart = Highcharts.chart('bar_chart', {
-            chart: {
-                type: 'bar',
-                backgroundColor: '#202B6E',
-                marginLeft: 130,
-                events: {
-                    load: function() {
-                        adjustYAxisMax(this); // Adjust max on initial load
-                    },
-                    redraw: function() {
-                        adjustYAxisMax(this); // Adjust max on redraw, e.g., after scroll
-                    }
-                }
-            },
-            title: {
-                text: '',
-                align: 'center',
-                x: 40,
-                style: {
-                    fontSize: '16px',
-                    fontWeight: 'bold',
-                    color: '#FFFFFF'
-                }
-            },
-            xAxis: {
-                type: 'category',
-                title: {
-                    text: null
-                },
-                lineColor: '#FFFFFF',
-                labels: {
-                    style: {
-                        whiteSpace: 'normal',
-                        fontSize: '12px',
-                        color: '#FFFFFF'
-                    }
-                },
-                min: 0,
-                max: 5,
-                scrollbar: {
-                    enabled: true
-                },
-                tickLength: 0,
-            },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: null
-                },
-                lineColor: '#FFFFFF',
-                lineWidth: 1,
-                labels: {
-                    enabled: false, // Disable y-axis labels to hide money amounts
-                },
-                gridLineWidth: 0.2,
-                //                tickInterval: 10000
-            },
-            plotOptions: {
-                bar: {
-                    dataLabels: {
-                        enabled: true
-                    },
-                    states: {
-                        hover: {
-                            color: '#FF9901'
-                        }
-                    }
-                }
-            },
-            tooltip: {
-                formatter: function() {
-
-                    return `<strong>Accused: </strong> ${this.point.name} <br>
-                            <strong>Involved amount: USD </strong> ${this.point.y} <br>
-                            <strong>Case ID: </strong> ${this.point.caseID} <br>`
-
-                }
-            },
-            legend: {
-                enabled: false
-            },
-            credits: {
-                enabled: false
-            },
-            series: [{
-                name: 'asset values',
-                data: dataForPlot
-            }]
-        });
-
-        adjustYAxisMax(bar_chart);
-
-        Highcharts.chart('pie_chart1', {
-            chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
-                type: 'pie'
-            },
-            title: {
-                text: null,
-                align: 'left'
-            },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-            },
-            accessibility: {
-                point: {
-                    valueSuffix: '%'
-                }
-            },
-            colors: ['#5991AD', '#004561', '#1C7685', '#4F5D2F', '#1F5D2F'],
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: true, // Enable data labels
-                        format: '{point.percentage:.1f} %'
-                    },
-                    showInLegend: true
-                }
-            },
-            series: [{
-                name: 'Value',
-                colorByPoint: true,
-                data: dataForPieChart1
-            }]
-        });
-
-        Highcharts.chart('pie_chart2', {
-            chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false,
-                type: 'pie'
-            },
-            title: {
-                text: null,
-                align: 'left'
-            },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-            },
-            accessibility: {
-                point: {
-                    valueSuffix: '%'
-                }
-            },
-            colors: ['#5991AD', '#004561', '#1C7685', '#4F5D2F', '#1F5D2F'],
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: true, // Enable data labels
-                        format: '{point.percentage:.1f} %'
-                    },
-                    showInLegend: true
-                }
-            },
-            series: [{
-                name: 'Value',
-                colorByPoint: true,
-                data: dataForPieChart2
-            }]
-        });
-
-        (async () => {
-            const topology = await fetch(
-                'https://code.highcharts.com/mapdata/countries/us/us-all.topo.json'
-            ).then(response => response.json());
-
-            const dataPoints = [{
-                    name: 'Texas',
-                    lat: 31.9686,
-                    lon: -99.9018,
-                    cases: 30
-                },
-                {
-                    name: 'Florida',
-                    lat: 27.9944,
-                    lon: -81.7603,
-                    cases: 27
-                },
-                {
-                    name: 'New York',
-                    lat: 40.7128,
-                    lon: -74.0060,
-                    cases: 10
-                },
-                {
-                    name: 'Connecticut',
-                    lat: 41.6032,
-                    lon: -73.0877,
-                    cases: 3
-                },
-                {
-                    name: 'Missouri',
-                    lat: 38.5739,
-                    lon: -92.6038,
-                    cases: 1
-                }
-            ];
-
-            Highcharts.mapChart('map-container', {
-                chart: {
-                    map: topology
-                },
-
-                title: {
-                    text: null,
-                },
-
-                legend: {
-                    enabled: false
-                },
-                mapView: {
-                    projection: {
-                        name: 'Miller'
-                    }
-                },
-                plotOptions: {
-                    series: {
-                        states: {
-                            inactive: {
-                                enabled: false
-                            },
-                            hover: {
-                                enabled: true
-                            }
-                        }
-                    },
-                    mappoint: {
-                        states: {
-                            inactive: {
-                                enabled: false
-                            },
-                            hover: {
-                                enabled: true
-                            }
-                        }
-                    }
-                },
-                series: [{
-                    // Main world map
-                    name: 'Countries',
-                    borderColor: '#A0A0A0', // Border color for countries
-                    nullColor: '#202b6e', // Color for countries without data
-                    enableMouseTracking: false // Disable hover on countries
-                }, {
-                    // Markers
-                    name: 'Number of cases',
-                    type: 'mappoint',
-                    data: dataPoints.map(point => ({
-                        name: point.name,
-                        lat: point.lat,
-                        lon: point.lon,
-                        cases: point.cases // Include number of cases in data
-                    })),
-                    color: '#FF9901', // Marker color                   
-                    marker: {
-                        lineWidth: 1,
-                        lineColor: '#fff',
-                        symbol: 'mapmarker',
-                        radius: 8
-                    },
-
-                    dataLabels: {
-                        enabled: false,
-                    },
-                }],
-                tooltip: {
-                    formatter: function() {
-                        // Access the cases through options
-                        return `<strong>${this.point.name}</strong><br>
-                                    Number of cases: ${this.point.cases}`;
-                    }
-                },
-            });
-        })();
-    </script>
 </body>
-</html>
 
+</html>
