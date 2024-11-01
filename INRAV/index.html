@@ -187,7 +187,7 @@
 
             #title_2 {
                 font-weight: bolder;
-                font-size: clamp(16px, 4vw, 40px);
+                font-size: clamp(20px, 4vw, 40px);
                 margin-top: 1em;
                 margin-bottom: 0.1em;
                 color: white;
@@ -202,8 +202,11 @@
                 font-weight: 600;
             }
 
-
-
+            .title_1 {
+                font-size: clamp(20px, 2.5vw, 30px);
+                margin-top: 1em;
+                margin-bottom: 1em;
+            }
         }
 
         @media (min-width: 851px) {
@@ -264,7 +267,7 @@
             }
 
             #title_2 {
-                font-size: clamp(16px, 4vw, 40px);
+                font-size: clamp(20px, 4vw, 40px);
                 margin-top: 1em;
                 margin-bottom: 1em;
                 color: white;
@@ -277,6 +280,12 @@
                 margin-bottom: 1em;
                 color: #202b6e;
                 font-weight: 600;
+            }
+
+            .title_1 {
+                font-size: clamp(20px, 4vw, 40px);
+                margin-top: 1em;
+                margin-bottom: 1em;
             }
 
         }
@@ -385,11 +394,7 @@
             color: white;
         }
 
-        #title_1 {
-            font-size: clamp(16px, 4vw, 40px);
-            margin-top: 1em;
-            margin-bottom: 1em;
-        }
+
 
         p {
             text-align: left;
@@ -406,7 +411,7 @@
             </div>
 
             <div id="navigation_buttons">
-<!--
+                <!--
                 <p>Home</p>
                 <p>About Us</p>
                 <p>Cases Dashboard</p>
@@ -423,7 +428,7 @@
         <div class="container page_description">
             <p class="text_blue">The <bold>Forfeited Assets Dashboard</bold> is an interactive database powered by the Venezuelan Asset Recovery Initiative (INRAV) that enables tracking of the list of assets recovered in U.S. corruption cases involving Venezuelan officials linked to the governments of Hugo Chávez and Nicolás Maduro. The <bold>Forfeited Assets Dashboard</bold> serves as a benchmark to assess how much money could support <bold>"A Fund for Venezuela"</bold>, a special fund intended to use these resources for the benefit of the Venezuelan population.</p>
 
-            <p class="text_blue">The information in the <bold>Forfeited Assets Dashboard</bold> was generated in partnership with <a href="https://transparenciave.org/project/quienes-somos/" target="_blank"><i>Transparencia Venezuela</i></a> and is based on research from the <bold><a href="https://corruptometro.org/" target="_blank">Corruptómetro</a></bold>, an interactive tool that monitors cases and investigations initiated by official bodies within and outside Venezuela, revealing the involvement of high-ranking officials, its spread to other countries, and the significant impact on the population.</p>
+            <p class="text_blue">The information in the <bold>Forfeited Assets Dashboard</bold> was generated in partnership with <a href="https://transparenciave.org/project/quienes-somos/" target="_blank"><i>Transparencia Venezuela</i></a> and is based on research from the <bold><a href="https://corruptometro.org/" target="_blank">Corruptómetro</a></bold>.</p>
 
             <p class="text_blue">The United States hosts the highest number of Venezuelan corruption cases outside Venezuela. As of October 2024, the number of cases has reached 60.</p>
         </div>
@@ -432,7 +437,7 @@
     <div class="centered_main_container">
         <div class="container" id="centered_container_map">
             <div id="paragraph-map-chart-container">
-                <p id="title_1" class="section_title">Amounts Seized in the US</p>
+                <p class="section_title title_1">Amounts Seized in the US</p>
             </div>
 
             <div class="spaced_between_cols">
@@ -459,7 +464,7 @@
             <div id="map-container"></div>
 
             <div id="paragraph-map-chart-container">
-                <p class="section_info">We aim to provide our users a comprehensive view of the accused individuals and the monetary value of the alleged misappropriated assets.</p>
+                <p class="section_info">Corruption cases involving Venezuelan oficials and their associates in the US, are concentrated in five states: Texas, Florida, New York, Connecticut and Missouri.</p>
             </div>
 
         </div>
@@ -478,12 +483,6 @@
                 <div id="bar_chart"></div>
 
                 <div id="paragraph-bar-chart-container">
-                    <p>We strive to ascertain the availability of
-                        monetary funds from the total forfeited assets,
-                        with the intention of establishing a secure
-                        reserve designated for eventual repatriation to
-                        Venezuela.</p>
-
                     <p>Each bar in this chart represents an accused
                         person, providing clarity on the scale of their
                         alleged financial misconduct.</p>
@@ -497,11 +496,11 @@
         <div class="container" id="centered_container_map">
 
             <div id="paragraph-map-chart-container">
-                <p id="title_1" class="section_title">Asset Recovery Breakdown</p>
+                <p class="section_title title_1">Asset Recovery Breakdown</p>
             </div>
 
             <div id="paragraph-map-chart-container">
-                <p class="section_info">Discover the distribution of total cases across the United States by state with these interactive pie charts. Dive deeper into each state’s impact by exploring the proportion of recovered funds associated with each location, highlighting the financial scope and geographical reach of recovery efforts nationwide.</p>
+                <p class="section_info">Discover the distribution of total cases across the United States by state with these interactive pie charts.</p>
             </div>
 
             <div class="spaced_between_cols2">
@@ -1058,11 +1057,16 @@
             }
         }
 
+        // Function to set marginLeft dynamically based on screen width
+        function getMarginLeft() {
+            return window.innerWidth < 600 ? 40 : 130; // Adjust this breakpoint as needed
+        }
+
         const bar_chart = Highcharts.chart('bar_chart', {
             chart: {
                 type: 'bar',
                 backgroundColor: '#202B6E',
-                marginLeft: 130,
+                marginLeft: getMarginLeft(),
                 events: {
                     load: function() {
                         adjustYAxisMax(this); // Adjust max on initial load
@@ -1090,9 +1094,10 @@
                 lineColor: '#FFFFFF',
                 labels: {
                     style: {
-                        whiteSpace: 'normal',
-                        fontSize: '12px',
-                        color: '#FFFFFF'
+                        color: '#FFFFFF',
+                        textOverflow: 'ellipsis',
+                        whiteSpace: 'wrap',
+
                     }
                 },
                 min: 0,
@@ -1146,6 +1151,9 @@
             credits: {
                 enabled: false
             },
+            exporting: {
+                enabled: false
+            },
             series: [{
                 name: 'asset values',
                 data: dataForPlot
@@ -1153,6 +1161,15 @@
         });
 
         adjustYAxisMax(bar_chart);
+
+        // Adjust the chart margin on window resize
+        window.addEventListener('resize', function() {
+            bar_chart.update({
+                chart: {
+                    marginLeft: getMarginLeft() // Update marginLeft on resize
+                }
+            });
+        });
 
         Highcharts.chart('pie_chart1', {
             chart: {
@@ -1345,3 +1362,4 @@
         })();
     </script>
 </body></html>
+
