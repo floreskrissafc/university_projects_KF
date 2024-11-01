@@ -1129,11 +1129,15 @@
             },
             tooltip: {
                 formatter: function() {
+                    // Format the involved amount with commas
+                    const formattedAmount = this.point.y.toLocaleString('en-US', {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2
+                    });
 
                     return `<strong>Accused: </strong> ${this.point.name} <br>
-                            <strong>Involved amount: USD </strong> ${this.point.y} <br>
-                            <strong>Case ID: </strong> ${this.point.caseID} <br>`
-
+                            <strong>Involved amount: USD </strong> ${formattedAmount} <br>
+                            <strong>Case ID: </strong> ${this.point.caseID} <br>`;
                 }
             },
             legend: {
