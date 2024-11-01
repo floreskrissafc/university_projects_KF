@@ -393,12 +393,6 @@
         a {
             color: white;
         }
-
-
-
-        p {
-            text-align: left;
-        }
     </style>
 </head>
 
@@ -1183,7 +1177,7 @@
                 align: 'left'
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                pointFormat: 'Number of Cases: <b>{point.y}</b>'
             },
             accessibility: {
                 point: {
@@ -1203,7 +1197,7 @@
                 }
             },
             series: [{
-                name: 'Value',
+                name: 'Number of Cases by State',
                 colorByPoint: true,
                 data: dataForPieChart1
             }]
@@ -1221,7 +1215,15 @@
                 align: 'left'
             },
             tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                formatter: function() {
+                    // Format the involved amount with commas
+                    const formattedAmount = this.point.y.toLocaleString('en-US', {
+                        minimumFractionDigits: 2,
+                        maximumFractionDigits: 2
+                    });
+
+                    return `Money Involved: <b>USD ${formattedAmount}</b>`;
+                }
             },
             accessibility: {
                 point: {
@@ -1362,4 +1364,5 @@
         })();
     </script>
 </body></html>
+
 
