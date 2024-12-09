@@ -356,7 +356,7 @@ function createTable(layoutType) {
         data: dataForTable,
         pagination:"local",
         paginationSize:10,
-        movableColumns:true,
+        movableColumns:false,
         paginationCounter:"rows",
         columns: [
             { title: "Accused", field: "accused", hozAlign: "center", responsive: 0, headerHozAlign: "center", headerSort:false},
