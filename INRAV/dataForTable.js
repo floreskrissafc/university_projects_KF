@@ -655,4 +655,28 @@ export const dataForTable = [
         year: 2018,
         caseStatus: "resolved"
     },
+    {
+        accused: "Gonzalo Jose Jorge Morales-Divo",
+        moneyAmount: 2534365.65,
+        caseID: "4:19-cr-00148",
+        state: "TX",
+        year: 2019,
+        caseStatus: "unknown"
+    },
+    {
+        accused: "Telefonica Venezolana C.A.",
+        moneyAmount: 2534365.65,
+        caseID: "1:24-cr-00633-DEH",
+        state: "NY",
+        year: 2024,
+        caseStatus: "resolved"
+    },
+    {
+        accused: "Luis Fernando Vuttef",
+        moneyAmount: 2534365.65,
+        caseID: "1:22-cr-20306-DPG",
+        state: "FL",
+        year: 2024,
+        caseStatus: "unknown"
+    },
 ];

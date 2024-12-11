@@ -97,6 +97,15 @@ figure {
     align-items: center;
 }
 
+.title_2 {
+    font-weight: bolder;
+    font-size: clamp(20px, 4vw, 40px);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: white;
+    text-align: center;
+}
+
 @media (max-width: 850px) {
     
     .spaced_between_cols {
@@ -137,8 +146,8 @@ figure {
         width: 100%;
         justify-content: space-between;
         align-items: center;
-        padding-top: 100px;
-        padding-bottom: 100px;
+        padding-top: 2vh;
+        padding-bottom: 2vh;
     }
 
     #bar_chart {
@@ -222,6 +231,7 @@ figure {
         align-content: center;
     }
 
+/*
     .title_2 {
         font-weight: bolder;
         font-size: clamp(20px, 4vw, 40px);
@@ -230,6 +240,7 @@ figure {
         color: white;
         text-align: center;
     }
+*/
 
     .pie_chart_title {
         font-size: clamp(12px, 1.5vw, 20px);

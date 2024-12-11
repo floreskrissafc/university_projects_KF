@@ -452,4 +452,22 @@ export const cases = [{
         caseID: "4:19-cr-00341",
         state: "TX"
 },
+                      {
+        accused: "Gonzalo Jose Jorge Morales-Divo",
+        moneyAmount: 2534365.65,
+        caseID: "4:19-cr-00148",
+        state: "TX",
+    },
+    {
+        accused: "Telefonica Venezolana C.A.",
+        moneyAmount: 2534365.65,
+        caseID: "1:24-cr-00633-DEH",
+        state: "NY",
+    },
+    {
+        accused: "Luis Fernando Vuttef",
+        moneyAmount: 2534365.65,
+        caseID: "1:22-cr-20306-DPG",
+        state: "FL",
+    },
 ];
