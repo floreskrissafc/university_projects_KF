@@ -356,7 +356,7 @@ function createTable(layoutType) {
         data: dataForTable,
         pagination:"local",
         paginationSize:10,
-        movableColumns:false,
+        movableColumns:true,
         paginationCounter:"rows",
         columns: [
             { title: "Accused", field: "accused", hozAlign: "center", responsive: 0, headerHozAlign: "center", headerSort:false},
@@ -369,25 +369,42 @@ function createTable(layoutType) {
     });
 }
 
+// Track the current layout type
+let currentLayout = null;
+
 // Add resize event listener
 window.addEventListener("resize", function () {
     var containerWidth = document.querySelector("#tableContainer").offsetWidth;
 
-    // Switch layout dynamically based on container width
-    if (containerWidth < 900) {
-        createTable("fitDataStretch"); // Narrow width layout
-    } else {
-        createTable("fitColumns"); // Wider width layout
+//    // Switch layout dynamically based on container width
+//    if (containerWidth < 900) {
+//        createTable("fitDataStretch"); // Narrow width layout
+//    } else {
+//        createTable("fitColumns"); // Wider width layout
+//    }
+    
+    // Determine the new layout type
+    let newLayout = containerWidth < 900 ? "fitDataStretch" : "fitColumns";
+
+    // Only recreate the table if the layout type changes
+    if (newLayout !== currentLayout) {
+        currentLayout = newLayout;
+        createTable(currentLayout); // Dynamically switch layout
     }
 });
 
+//// Initial check on page load
+//var initialWidth = document.querySelector("#tableContainer").offsetWidth;
+//if (initialWidth < 900) {
+//    createTable("fitDataStretch");
+//} else {
+//    createTable("fitColumns");
+//}
+
 // Initial check on page load
 var initialWidth = document.querySelector("#tableContainer").offsetWidth;
-if (initialWidth < 900) {
-    createTable("fitDataStretch");
-} else {
-    createTable("fitColumns");
-}
+currentLayout = initialWidth < 900 ? "fitDataStretch" : "fitColumns";
+createTable(currentLayout);
 
 
 // Filter for table code
@@ -409,7 +426,8 @@ function updateFilter(){
 //Update filters on value change
 document.getElementById("filter-field").addEventListener("change", updateFilter);
 document.getElementById("filter-type").addEventListener("change", updateFilter);
-document.getElementById("filter-value").addEventListener("keyup", updateFilter);
+//document.getElementById("filter-value").addEventListener("keyup", updateFilter);
+document.getElementById("filter-value").addEventListener("change", updateFilter);
 
 //Clear filters on "Clear Filters" button click
 document.getElementById("filter-clear").addEventListener("click", function(){
