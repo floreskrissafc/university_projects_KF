@@ -8,13 +8,24 @@ import { statePoints } from './dataForUSMap.js';
 // Sort the cases by the amount of money, descending
 cases.sort((a, b) => b.moneyAmount - a.moneyAmount); 
 
+
 let dataForPlot = []; // Array of objects for bar chart
 
 let totalMoneyInvolved = 0;
 
-let statesCaseCount = { FL: 27, TX: 30, NY: 10, CT: 3, MO: 1 };
+//let statesCaseCount = { FL: 27, TX: 30, NY: 10, CT: 3, MO: 1 };
+
+let statesCaseCount = {};
+
+cases.forEach((caseItem) => {
+    statesCaseCount[caseItem.state] = (statesCaseCount[caseItem.state] || 0) + 1;
+});
+
+console.log(statesCaseCount);
 
 let statesMoneyCount = {};
+
+
 
 
 for (let i = 0; i < cases.length; i++) {
@@ -375,13 +386,6 @@ let currentLayout = null;
 // Add resize event listener
 window.addEventListener("resize", function () {
     var containerWidth = document.querySelector("#tableContainer").offsetWidth;
-
-//    // Switch layout dynamically based on container width
-//    if (containerWidth < 900) {
-//        createTable("fitDataStretch"); // Narrow width layout
-//    } else {
-//        createTable("fitColumns"); // Wider width layout
-//    }
     
     // Determine the new layout type
     let newLayout = containerWidth < 900 ? "fitDataStretch" : "fitColumns";
@@ -392,14 +396,6 @@ window.addEventListener("resize", function () {
         createTable(currentLayout); // Dynamically switch layout
     }
 });
-
-//// Initial check on page load
-//var initialWidth = document.querySelector("#tableContainer").offsetWidth;
-//if (initialWidth < 900) {
-//    createTable("fitDataStretch");
-//} else {
-//    createTable("fitColumns");
-//}
 
 // Initial check on page load
 var initialWidth = document.querySelector("#tableContainer").offsetWidth;
