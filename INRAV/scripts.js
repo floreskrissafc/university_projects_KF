@@ -9,11 +9,10 @@ import { statePoints } from './dataForUSMap.js';
 cases.sort((a, b) => b.moneyAmount - a.moneyAmount); 
 
 
-let dataForPlot = []; // Array of objects for bar chart
+let dataForPlot = []; 
 
 let totalMoneyInvolved = 0;
 
-//let statesCaseCount = { FL: 27, TX: 30, NY: 10, CT: 3, MO: 1 };
 
 let statesCaseCount = {};
 
@@ -21,12 +20,7 @@ cases.forEach((caseItem) => {
     statesCaseCount[caseItem.state] = (statesCaseCount[caseItem.state] || 0) + 1;
 });
 
-console.log(statesCaseCount);
-
 let statesMoneyCount = {};
-
-
-
 
 for (let i = 0; i < cases.length; i++) {
     dataForPlot.push({
@@ -160,8 +154,7 @@ const bar_chart = Highcharts.chart('bar_chart', {
                 maximumFractionDigits: 2
             });
 
-            return `<strong>Accused: </strong> ${this.point.name} <br>
-                    <strong>Involved amount: USD </strong> ${formattedAmount} <br>
+            return `<strong>Involved amount: USD </strong> ${formattedAmount} <br>
                     <strong>Case ID: </strong> ${this.point.caseID} <br>`;
         }
     },
