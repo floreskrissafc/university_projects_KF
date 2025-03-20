@@ -5,7 +5,7 @@ export const dataForTable = [
         caseID: "0:19-cr-60280-CMA",
         state: "FL",
         year: 2020,
-        caseStatus: "unknown"
+        caseStatus: "resolved"
     },
 
     {
@@ -77,7 +77,7 @@ export const dataForTable = [
         caseID: "1:18-cr-20685-KMW",
         state: "FL",
         year: 2021,
-        caseStatus: "ongoing"
+        caseStatus: "resolved"
     },
 
     {
@@ -545,7 +545,7 @@ export const dataForTable = [
         caseID: " 1:18-cr-20682-CMA",
         state: "FL",
         year: 2019,
-        caseStatus: "unknown"
+        caseStatus: "resolved"
     },
 
     {
@@ -586,11 +586,11 @@ export const dataForTable = [
 
     {
         accused: "César David Rincón Godoy",
-        moneyAmount: 7033504.71,
+        moneyAmount: 1212905.87,
         caseID: "4:17-cr-00514",
         state: "TX",
         year: 2017,
-        caseStatus: "ongoing"
+        caseStatus: "resolved"
     },
 
     {
@@ -599,7 +599,7 @@ export const dataForTable = [
         caseID: "17-cr-514",
         state: "TX",
         year: 2017,
-        caseStatus: "ongoing"
+        caseStatus: "resolved"
     },
 
     {
@@ -661,11 +661,11 @@ export const dataForTable = [
         caseID: "4:19-cr-00148",
         state: "TX",
         year: 2019,
-        caseStatus: "unknown"
+        caseStatus: "resolved"
     },
     {
         accused: "Telefonica Venezolana C.A.",
-        moneyAmount: 2534365.65,
+        moneyAmount: 85260000,
         caseID: "1:24-cr-00633-DEH",
         state: "NY",
         year: 2024,
@@ -673,10 +673,34 @@ export const dataForTable = [
     },
     {
         accused: "Luis Fernando Vuttef",
-        moneyAmount: 2534365.65,
+        moneyAmount: 4124722,
         caseID: "1:22-cr-20306-DPG",
         state: "FL",
         year: 2024,
-        caseStatus: "unknown"
+        caseStatus: "resolved"
+    },
+    {
+        accused: "Naman Wakil",
+        moneyAmount: 21248434.25,
+        caseID: "23-cv-22987",
+        state: "FL",
+        year: 2024,
+        caseStatus: "resolved"
+    }, 
+    {
+        accused: "Fabrizio Della Polla De-Simone",
+        moneyAmount: 8000000 ,
+        caseID: "24-cv-001714",
+        state: "FL",
+        year: 2024,
+        caseStatus: "ongoing"
+    },
+    {
+        accused: "George Semerene",
+        moneyAmount: 52647.02 ,
+        caseID: "21-CR-20589",
+        state: "FL",
+        year: 2021,
+        caseStatus: "resolved"
     },
 ];
