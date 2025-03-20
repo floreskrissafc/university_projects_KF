@@ -232,17 +232,6 @@ figure {
         align-content: center;
     }
 
-/*
-    .title_2 {
-        font-weight: bolder;
-        font-size: clamp(20px, 4vw, 40px);
-        margin-top: 1em;
-        margin-bottom: 1em;
-        color: white;
-        text-align: center;
-    }
-*/
-
     .pie_chart_title {
         font-size: clamp(12px, 1.5vw, 20px);
         text-align: center;
@@ -264,8 +253,8 @@ figure {
     width: 75%;
     justify-content: space-between;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #paragraph-bar-chart-container p,
