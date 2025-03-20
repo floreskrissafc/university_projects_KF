@@ -127,7 +127,7 @@ export const cases = [{
     {
         accused: "Jorge Nóbrega",
         moneyAmount: 3783337.93,
-        caseID: "1:21-cr-20442-PCH-1/",
+        caseID: "1:21-cr-20442-PCH-1",
         state: "FL"
 },
 
@@ -406,7 +406,7 @@ export const cases = [{
 
     {
         accused: "César David Rincón Godoy",
-        moneyAmount: 7033504.71,
+        moneyAmount: 1212905.87,
         caseID: "4:17-cr-00514",
         state: "TX"
 },
@@ -460,14 +460,40 @@ export const cases = [{
     },
     {
         accused: "Telefonica Venezolana C.A.",
-        moneyAmount: 2534365.65,
+        moneyAmount: 85260000,
         caseID: "1:24-cr-00633-DEH",
         state: "NY",
     },
     {
         accused: "Luis Fernando Vuttef",
-        moneyAmount: 2534365.65,
+        moneyAmount: 4124722,
         caseID: "1:22-cr-20306-DPG",
         state: "FL",
     },
+    {
+        accused: "Naman Wakil",
+        moneyAmount: 21248434.25,
+        caseID: "23-cv-22987",
+        state: "FL",
+    },
+    {
+        accused: "Fabrizio Della Polla De-Simone",
+        moneyAmount: 8000000,
+        caseID: "24-cv-001714",
+        state: "FL",
+    },
+    {
+        accused: "George Semerene",
+        moneyAmount: 52647.02,
+        caseID: "21-CR-20589",
+        state: "FL",
+    },
+    {
+        accused: "Raul Gorrin Belisario",
+        moneyAmount: 0,
+        caseID: "24-cr-20468",
+        state: "FL",
+    },
+        
+                              
 ];
