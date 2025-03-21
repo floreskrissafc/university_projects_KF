@@ -452,48 +452,48 @@ export const cases = [{
         caseID: "4:19-cr-00341",
         state: "TX"
 },
-                      {
+    {
         accused: "Gonzalo Jose Jorge Morales-Divo",
         moneyAmount: 2534365.65,
         caseID: "4:19-cr-00148",
-        state: "TX",
-    },
+        state: "TX"
+},
     {
         accused: "Telefonica Venezolana C.A.",
         moneyAmount: 85260000,
         caseID: "1:24-cr-00633-DEH",
-        state: "NY",
-    },
+        state: "NY"
+},
     {
         accused: "Luis Fernando Vuttef",
         moneyAmount: 4124722,
         caseID: "1:22-cr-20306-DPG",
-        state: "FL",
-    },
+        state: "FL"
+},
     {
         accused: "Naman Wakil",
         moneyAmount: 21248434.25,
         caseID: "23-cv-22987",
-        state: "FL",
-    },
+        state: "FL"
+},
     {
         accused: "Fabrizio Della Polla De-Simone",
         moneyAmount: 8000000,
         caseID: "24-cv-001714",
-        state: "FL",
-    },
+        state: "FL"
+},
     {
         accused: "George Semerene",
         moneyAmount: 52647.02,
         caseID: "21-CR-20589",
-        state: "FL",
-    },
+        state: "FL"
+},
     {
         accused: "Raul Gorrin Belisario",
         moneyAmount: 0,
         caseID: "24-cr-20468",
-        state: "FL",
-    },
+        state: "FL"
+}
         
                               
 ];
