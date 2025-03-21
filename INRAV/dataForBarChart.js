@@ -406,7 +406,7 @@ export const cases = [{
 
     {
         accused: "César David Rincón Godoy",
-        moneyAmount: 7033504.71,
+        moneyAmount: 1212905.87,
         caseID: "4:17-cr-00514",
         state: "TX"
 },
@@ -460,13 +460,13 @@ export const cases = [{
 },
     {
         accused: "Telefonica Venezolana C.A.",
-        moneyAmount: 2534365.65,
+        moneyAmount: 85260000,
         caseID: "1:24-cr-00633-DEH",
         state: "NY"
 },
     {
         accused: "Luis Fernando Vuttef",
-        moneyAmount: 2534365.65,
+        moneyAmount: 4124722,
         caseID: "1:22-cr-20306-DPG",
         state: "FL"
     },
