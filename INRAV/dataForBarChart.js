@@ -482,17 +482,5 @@ export const cases = [{
         caseID: "24-cv-001714",
         state: "FL"
 },
-    {
-        accused: "George Semerene",
-        moneyAmount: 52647.02,
-        caseID: "21-CR-20589",
-        state: "FL"
-},
-    {
-        accused: "Raul Gorrin Belisario",
-        moneyAmount: 0,
-        caseID: "24-CR-20468",
-        state: "FL"
-},
                       
 ];
