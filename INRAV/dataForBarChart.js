@@ -452,6 +452,14 @@ export const cases = [{
         caseID: "4:19-cr-00341",
         state: "TX"
 },
+
+    {
+        accused: "Raul Gorrin Belisario",
+        moneyAmount: 0,
+        caseID: "24-CR-20468",
+        state: "FL"
+},
+
     {
         accused: "Gonzalo Jose Jorge Morales-Divo",
         moneyAmount: 2534365.65,
