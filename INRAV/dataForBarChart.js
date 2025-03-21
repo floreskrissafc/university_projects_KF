@@ -469,6 +469,12 @@ export const cases = [{
         moneyAmount: 4124722,
         caseID: "1:22-cr-20306-DPG",
         state: "FL"
-    },
+},
+    {
+        accused: "Naman Wakil",
+        moneyAmount: 21248434.25,
+        caseID: "23-cv-22987",
+        state: "FL"
+},
                       
 ];
