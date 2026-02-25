@@ -158,6 +158,7 @@ const bar_chart = Highcharts.chart('bar_chart', {
                              <strong>Case ID: </strong> ${this.point.caseID} <br>`;
             let forfeitedAmount = "unknown";
             if ( this.point.forfeitedAmount != "unknown"){
+                console.log("this.point.forfeitedAmount", this.point.forfeitedAmount);
                 forfeitedAmount = this.point.forfeitedAmount.toLocaleString('en-US', {
                    minimumFractionDigits: 2,
                    maximumFractionDigits: 2
