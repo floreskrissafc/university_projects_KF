@@ -26,7 +26,8 @@ for (let i = 0; i < cases.length; i++) {
     dataForPlot.push({
         name: cases[i].accused, // x-value
         y: cases[i].moneyAmount, // y-value
-        caseID: cases[i].caseID // Tooltip info
+        caseID: cases[i].caseID, // Tooltip info
+        forfeitedAmount: cases[i].forfeitedAmount
     });
 
     totalMoneyInvolved += cases[i].moneyAmount;
@@ -153,9 +154,18 @@ const bar_chart = Highcharts.chart('bar_chart', {
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 2
             });
+            let resultStr = `<strong>Involved amount: USD </strong> ${formattedAmount} <br>
+                             <strong>Case ID: </strong> ${this.point.caseID} <br>`;
+            let forfeitedAmount = "unknown";
+            if ( this.point.forfeitedAmount != "unknown"){
+                forfeitedAmount = this.point.forfeitedAmount.toLocaleString('en-US', {
+                   minimumFractionDigits: 2,
+                   maximumFractionDigits: 2
+                });
+                return resultStr + `<strong>Forfeited amount: USD </strong> ${forfeitedAmount} <br>`;
+            }
 
-            return `<strong>Involved amount: USD </strong> ${formattedAmount} <br>
-                    <strong>Case ID: </strong> ${this.point.caseID} <br>`;
+            return resultStr + `<strong>Forfeited amount:</strong> ${forfeitedAmount} <br>`;
         }
     },
     legend: {
