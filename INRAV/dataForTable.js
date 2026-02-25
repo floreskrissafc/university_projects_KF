@@ -5,7 +5,8 @@ export const dataForTable = [
         caseID: "0:19-cr-60280-CMA",
         state: "FL",
         year: 2020,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -14,7 +15,8 @@ export const dataForTable = [
         caseID: "21-cr-20509",
         state: "FL",
         year: 2021,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -23,7 +25,8 @@ export const dataForTable = [
         caseID: "21-cr-20509",
         state: "FL",
         year: 2021,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -32,7 +35,8 @@ export const dataForTable = [
         caseID: "21-cr-20509",
         state: "FL",
         year: 2021,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -41,7 +45,8 @@ export const dataForTable = [
         caseID: "21-cr-20509",
         state: "FL",
         year: 2021,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -50,7 +55,8 @@ export const dataForTable = [
         caseID: "21-cr-20509",
         state: "FL",
         year: 2021,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -59,7 +65,8 @@ export const dataForTable = [
         caseID: "19-cr-20450",
         state: "FL",
         year: 2019,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -68,7 +75,8 @@ export const dataForTable = [
         caseID: "19-cr-20450",
         state: "FL",
         year: 2019,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -77,7 +85,8 @@ export const dataForTable = [
         caseID: "1:18-cr-20685-KMW",
         state: "FL",
         year: 2021,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: 5000000
     },
 
     {
@@ -86,7 +95,8 @@ export const dataForTable = [
         caseID: "1:20-cr-20241-KMW",
         state: "FL",
         year: 2020,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: 45986230.1,
     },
 
     {
@@ -95,7 +105,8 @@ export const dataForTable = [
         caseID: "3:11-cr-0041",
         state: "CT",
         year: 2021,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -104,7 +115,8 @@ export const dataForTable = [
         caseID: "3:11-cr-0041",
         state: "FL",
         year: 2022,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -113,7 +125,8 @@ export const dataForTable = [
         caseID: "3:11-cr-0041",
         state: "FL",
         year: 2022,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -122,7 +135,8 @@ export const dataForTable = [
         caseID: "13-cr-00671",
         state: "NY",
         year: 2013,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -131,7 +145,8 @@ export const dataForTable = [
         caseID: "13-cr-673",
         state: "NY",
         year: 2013,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -140,7 +155,8 @@ export const dataForTable = [
         caseID: "16-cr-00437",
         state: "TX",
         year: 2015,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -149,7 +165,8 @@ export const dataForTable = [
         caseID: "4:15-cr-00636",
         state: "TX",
         year: 2015,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: 210625.79
     },
 
     {
@@ -158,7 +175,8 @@ export const dataForTable = [
         caseID: "13-cr-670",
         state: "NY",
         year: 2013,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -167,7 +185,8 @@ export const dataForTable = [
         caseID: "19-cr-20351",
         state: "FL",
         year: 2019,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: 1100000
     },
 
     {
@@ -176,7 +195,8 @@ export const dataForTable = [
         caseID: "1:19-CR-20351-CMA",
         state: "FL",
         year: 2019,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -185,7 +205,8 @@ export const dataForTable = [
         caseID: "1:19-cr-20726-JEM",
         state: "FL",
         year: 2019,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: 256829.14  
     },
 
     {
@@ -194,7 +215,8 @@ export const dataForTable = [
         caseID: "19-cr-20725",
         state: "FL",
         year: 2019,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -203,7 +225,8 @@ export const dataForTable = [
         caseID: "17-cr-00515",
         state: "TX",
         year: 2017,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: 1116038.42
     },
 
     {
@@ -212,7 +235,8 @@ export const dataForTable = [
         caseID: "1:14-cr-00240-DLC",
         state: "NY",
         year: 2014,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -221,7 +245,8 @@ export const dataForTable = [
         caseID: "1:21-cr-20442-PCH-1/",
         state: "FL",
         year: 2022,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -230,7 +255,8 @@ export const dataForTable = [
         caseID: "16-cr-00436",
         state: "TX",
         year: 2016,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -239,7 +265,8 @@ export const dataForTable = [
         caseID: "17-cr-00005",
         state: "TX",
         year: 2017,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -248,7 +275,8 @@ export const dataForTable = [
         caseID: "20-cr-20163",
         state: "FL",
         year: 2020,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -257,7 +285,8 @@ export const dataForTable = [
         caseID: "4:17-cv-02920-SNLJ",
         state: "MO",
         year: 2018,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -266,7 +295,8 @@ export const dataForTable = [
         caseID: "4:17-cv-02920-SNLJ",
         state: "MO",
         year: 2018,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -275,7 +305,8 @@ export const dataForTable = [
         caseID: "20-cr-00089",
         state: "TX",
         year: 2020,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -284,7 +315,8 @@ export const dataForTable = [
         caseID: "17-cr-00394",
         state: "TX",
         year: 2017,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: 1318648
     },
 
     {
@@ -293,7 +325,8 @@ export const dataForTable = [
         caseID: "3:11-cr-00086-SRU",
         state: "CT",
         year: 2012,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -302,7 +335,8 @@ export const dataForTable = [
         caseID: "18-cr-00200",
         state: "TX",
         year: 2018,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -311,7 +345,8 @@ export const dataForTable = [
         caseID: "09-CR-20140",
         state: "FL",
         year: 2012,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -320,7 +355,8 @@ export const dataForTable = [
         caseID: "19-CR-00135",
         state: "TX",
         year: 2019,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -329,7 +365,8 @@ export const dataForTable = [
         caseID: "4:18-cr-00611",
         state: "TX",
         year: 2018,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: 978339.5
     },
 
     {
@@ -338,7 +375,8 @@ export const dataForTable = [
         caseID: "17-cr-00006",
         state: "TX",
         year: 2017,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -347,7 +385,8 @@ export const dataForTable = [
         caseID: "15-cr-00637",
         state: "TX",
         year: 2015,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -356,7 +395,8 @@ export const dataForTable = [
         caseID: "1:19-cr-00144-AKH",
         state: "NY",
         year: 2021,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: 547911
     },
 
     {
@@ -365,7 +405,8 @@ export const dataForTable = [
         caseID: "16-cr-009",
         state: "TX",
         year: 2016,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -374,7 +415,8 @@ export const dataForTable = [
         caseID: "1:19-cr-00765-JSR",
         state: "NY",
         year: 2020,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -383,7 +425,8 @@ export const dataForTable = [
         caseID: "4:19-cr-00186",
         state: "TX",
         year: 2019,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -392,7 +435,8 @@ export const dataForTable = [
         caseID: "16-17407",
         state: "CT",
         year: 2012,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: 315000
     },
 
     {
@@ -401,7 +445,8 @@ export const dataForTable = [
         caseID: "1:13-cr-20930-UU",
         state: "FL",
         year: 2015,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: 179484.28
     },
 
     {
@@ -410,7 +455,8 @@ export const dataForTable = [
         caseID: "19-CR-00135",
         state: "TX",
         year: 2019,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -419,7 +465,8 @@ export const dataForTable = [
         caseID: "1:07-cr-20999-JAL",
         state: "FL",
         year: 2009,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -428,7 +475,8 @@ export const dataForTable = [
         caseID: "15-cr-00635",
         state: "TX",
         year: 2015,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -437,7 +485,8 @@ export const dataForTable = [
         caseID: "1:14-cr-00240-DLC",
         state: "NY",
         year: 2014,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -446,7 +495,8 @@ export const dataForTable = [
         caseID: "1:13-cr-00901-PAE",
         state: "NY",
         year: 2013,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -455,7 +505,8 @@ export const dataForTable = [
         caseID: "4:16-cr-00437",
         state: "TX",
         year: 2016,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -464,7 +515,8 @@ export const dataForTable = [
         caseID: "17-cr-80242",
         state: "FL",
         year: 2017,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -473,7 +525,8 @@ export const dataForTable = [
         caseID: "18-cr-80054",
         state: "FL",
         year: 2018,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -482,7 +535,8 @@ export const dataForTable = [
         caseID: "18-cr-80160",
         state: "FL",
         year: 2018,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -491,7 +545,8 @@ export const dataForTable = [
         caseID: "18-cr-80160",
         state: "FL",
         year: 2018,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: 1291902.66
     },
 
     {
@@ -500,7 +555,8 @@ export const dataForTable = [
         caseID: "1:21-cr-20406-KMW",
         state: "FL",
         year: 2021,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -509,7 +565,8 @@ export const dataForTable = [
         caseID: "1:15-cr-00765-PAC",
         state: "NY",
         year: 2016,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -518,7 +575,8 @@ export const dataForTable = [
         caseID: "1:18-cr-20685-KMW",
         state: "FL",
         year: 2018,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: 839803.33
     },
 
     {
@@ -527,7 +585,8 @@ export const dataForTable = [
         caseID: "18-cr-20685",
         state: "FL",
         year: 2018,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -536,7 +595,8 @@ export const dataForTable = [
         caseID: "1:18-cr-20685-KMW",
         state: "FL",
         year: 2018,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: 3938705.3
     },
 
     {
@@ -545,7 +605,8 @@ export const dataForTable = [
         caseID: " 1:18-cr-20682-CMA",
         state: "FL",
         year: 2019,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -554,7 +615,8 @@ export const dataForTable = [
         caseID: "1:23-cr-20089-KMW",
         state: "FL",
         year: 2023,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -563,16 +625,18 @@ export const dataForTable = [
         caseID: "20-cr-00305",
         state: "TX",
         year: 2020,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: 157501.42
     },
 
     {
         accused: "Abraham José Shiera Bastidas",
-        moneyAmount: 19269770.05,
+        moneyAmount: 19290830.82,
         caseID: "4:15-cr-00654",
         state: "TX",
         year: 2015,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -581,7 +645,8 @@ export const dataForTable = [
         caseID: "15-cr-00654",
         state: "TX",
         year: 2015,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -590,7 +655,8 @@ export const dataForTable = [
         caseID: "4:17-cr-00514",
         state: "TX",
         year: 2017,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: 1212905.87
     },
 
     {
@@ -599,7 +665,8 @@ export const dataForTable = [
         caseID: "17-cr-514",
         state: "TX",
         year: 2017,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -608,7 +675,8 @@ export const dataForTable = [
         caseID: " 1:22-cr-20164-RNS",
         state: "FL",
         year: 2022,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -617,7 +685,8 @@ export const dataForTable = [
         caseID: "1:17-cr-00077-WHP",
         state: "NY",
         year: 2018,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -626,7 +695,8 @@ export const dataForTable = [
         caseID: "1:17-cr-00077-WHP",
         state: "NY",
         year: 2018,
-        caseStatus: "unknown"
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -635,7 +705,8 @@ export const dataForTable = [
         caseID: "22-cr-20391",
         state: "FL",
         year: 2022,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
     },
 
     {
@@ -644,16 +715,18 @@ export const dataForTable = [
         caseID: "  23-cr-20364",
         state: "FL",
         year: 2023,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
 
     {
         accused: "José Manuel González Testino",
-        moneyAmount: 0,
+        moneyAmount: 14000000,
         caseID: "4:19-cr-00341",
         state: "TX",
         year: 2018,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: 14000000
     },
     {
         accused: "Gonzalo Jose Jorge Morales-Divo",
@@ -661,7 +734,8 @@ export const dataForTable = [
         caseID: "4:19-cr-00148",
         state: "TX",
         year: 2019,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
     {
         accused: "Telefonica Venezolana C.A.",
@@ -669,7 +743,8 @@ export const dataForTable = [
         caseID: "1:24-cr-00633-DEH",
         state: "NY",
         year: 2024,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
     {
         accused: "Luis Fernando Vuttef",
@@ -677,7 +752,8 @@ export const dataForTable = [
         caseID: "1:22-cr-20306-DPG",
         state: "FL",
         year: 2024,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     },
     {
         accused: "Naman Wakil",
@@ -685,22 +761,25 @@ export const dataForTable = [
         caseID: "23-cv-22987",
         state: "FL",
         year: 2024,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: "unknown"
     }, 
     {
         accused: "Fabrizio Della Polla De-Simone",
-        moneyAmount: 8000000 ,
+        moneyAmount: 8000000,
         caseID: "24-cv-001714",
         state: "FL",
         year: 2024,
-        caseStatus: "ongoing"
+        caseStatus: "ongoing",
+        forfeitedAmount: 8000000
     },
     {
         accused: "George Semerene",
-        moneyAmount: 52647.02 ,
+        moneyAmount: 52647.02,
         caseID: "21-CR-20589",
         state: "FL",
         year: 2021,
-        caseStatus: "resolved"
+        caseStatus: "resolved",
+        forfeitedAmount: 52647.02
     },
 ];
