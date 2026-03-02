@@ -489,6 +489,28 @@ export const cases = [{
         caseID: "21-CR-20589",
         state: "FL"
 },
-
-                      
+    {
+        accused: "Maikel Moreno Perez",
+        moneyAmount: 0,
+        caseID: "23-CR-20035",
+        state: "FL"
+},
+    {
+        accused: "Nepmar Jesus Escalona Enriquez",
+        moneyAmount: 841649.88,
+        caseID: "22-CR-20423",
+        state: "FL"
+},
+    {
+        accused: "Jose Vicente Amparan Croquer",
+        moneyAmount: 40405.72,
+        caseID: "18-CR-20685",
+        state: "FL"
+},
+    {
+        accused: "Leonardo Santilli Garcia",
+        moneyAmount: 43769169.48,
+        caseID: "21-CV-20614",
+        state: "FL"
+}                    
 ];
