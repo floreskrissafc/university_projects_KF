@@ -782,4 +782,40 @@ export const dataForTable = [
         caseStatus: "resolved",
         forfeitedAmount: 52647.02
     },
+    {
+        accused: "Maikel Moreno Perez",
+        moneyAmount: 0,
+        caseID: "23-CR-20035",
+        state: "FL",
+        year: 2023,
+        caseStatus: "unknown",
+        forfeitedAmount: "unknown"
+    },
+    {
+        accused: "Nepmar Jesus Escalona Enriquez",
+        moneyAmount: 841649.88,
+        caseID: "22-CR-20423",
+        state: "FL",
+        year: 2022,
+        caseStatus: "unknown",
+        forfeitedAmount: 841649.88
+    },
+    {
+        accused: "Jose Vicente Amparan Croquer",
+        moneyAmount: 0,
+        caseID: "18-CR-20685",
+        state: "FL",
+        year: 2018,
+        caseStatus: "unknown",
+        forfeitedAmount: 40405.72
+    },
+    {
+        accused: "Leonardo Santilli Garcia",
+        moneyAmount: 43769169.48,
+        caseID: "21-CV-20614",
+        state: "FL",
+        year: 2021,
+        caseStatus: "unknown",
+        forfeitedAmount: 43769169.48
+    } 
 ];
