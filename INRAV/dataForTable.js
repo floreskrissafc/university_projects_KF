@@ -86,7 +86,7 @@ export const dataForTable = [
         state: "FL",
         year: 2021,
         caseStatus: "resolved",
-        forfeitedAmount: 5000000
+        forfeitedAmount: 9253754
     },
 
     {
@@ -101,7 +101,7 @@ export const dataForTable = [
 
     {
         accused: "Francisco Illarramendi",
-        moneyAmount: 25844834,
+        moneyAmount: "unknown",
         caseID: "3:11-cr-0041",
         state: "CT",
         year: 2021,
@@ -136,7 +136,7 @@ export const dataForTable = [
         state: "NY",
         year: 2013,
         caseStatus: "resolved",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 13474511.14
     },
 
     {
@@ -146,7 +146,7 @@ export const dataForTable = [
         state: "NY",
         year: 2013,
         caseStatus: "resolved",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 1475122.56
     },
 
     {
@@ -166,7 +166,7 @@ export const dataForTable = [
         state: "TX",
         year: 2015,
         caseStatus: "resolved",
-        forfeitedAmount: 210625.79
+        forfeitedAmount: 1555280.04
     },
 
     {
@@ -176,7 +176,7 @@ export const dataForTable = [
         state: "NY",
         year: 2013,
         caseStatus: "resolved",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 1979391.84
     },
 
     {
@@ -191,7 +191,7 @@ export const dataForTable = [
 
     {
         accused: "Luis Alberto Chacín Haddad",
-        moneyAmount: 5500000,
+        moneyAmount: "unknown",
         caseID: "1:19-CR-20351-CMA",
         state: "FL",
         year: 2019,
@@ -216,7 +216,7 @@ export const dataForTable = [
         state: "FL",
         year: 2019,
         caseStatus: "resolved",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 2525000
     },
 
     {
@@ -245,8 +245,8 @@ export const dataForTable = [
         caseID: "1:21-cr-20442-PCH-1/",
         state: "FL",
         year: 2022,
-        caseStatus: "unknown",
-        forfeitedAmount: "unknown"
+        caseStatus: "resolved",
+        forfeitedAmount: 380550
     },
 
     {
@@ -256,7 +256,7 @@ export const dataForTable = [
         state: "TX",
         year: 2016,
         caseStatus: "resolved",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 891760.52
     },
 
     {
@@ -285,8 +285,8 @@ export const dataForTable = [
         caseID: "4:17-cv-02920-SNLJ",
         state: "MO",
         year: 2018,
-        caseStatus: "unknown",
-        forfeitedAmount: "unknown"
+        caseStatus: "resolved",
+        forfeitedAmount: 1820945.05
     },
 
     {
@@ -295,8 +295,8 @@ export const dataForTable = [
         caseID: "4:17-cv-02920-SNLJ",
         state: "MO",
         year: 2018,
-        caseStatus: "unknown",
-        forfeitedAmount: "unknown"
+        caseStatus: "resolved",
+        forfeitedAmount: 1820945.05
     },
 
     {
@@ -325,8 +325,8 @@ export const dataForTable = [
         caseID: "3:11-cr-00086-SRU",
         state: "CT",
         year: 2012,
-        caseStatus: "unknown",
-        forfeitedAmount: "unknown"
+        caseStatus: "resolved",
+        forfeitedAmount: 1070327.37
     },
 
     {
@@ -415,7 +415,7 @@ export const dataForTable = [
         caseID: "1:19-cr-00765-JSR",
         state: "NY",
         year: 2020,
-        caseStatus: "unknown",
+        caseStatus: "resolved",
         forfeitedAmount: "unknown"
     },
 
@@ -425,7 +425,7 @@ export const dataForTable = [
         caseID: "4:19-cr-00186",
         state: "TX",
         year: 2019,
-        caseStatus: "unknown",
+        caseStatus: "resolved",
         forfeitedAmount: "unknown"
     },
 
@@ -435,7 +435,7 @@ export const dataForTable = [
         caseID: "16-17407",
         state: "CT",
         year: 2012,
-        caseStatus: "unknown",
+        caseStatus: "resolved",
         forfeitedAmount: 315000
     },
 
@@ -446,7 +446,7 @@ export const dataForTable = [
         state: "FL",
         year: 2015,
         caseStatus: "resolved",
-        forfeitedAmount: 179484.28
+        forfeitedAmount: 240661.99
     },
 
     {
@@ -465,7 +465,7 @@ export const dataForTable = [
         caseID: "1:07-cr-20999-JAL",
         state: "FL",
         year: 2009,
-        caseStatus: "unknown",
+        caseStatus: "resolved",
         forfeitedAmount: "unknown"
     },
 
@@ -496,17 +496,7 @@ export const dataForTable = [
         state: "NY",
         year: 2013,
         caseStatus: "resolved",
-        forfeitedAmount: "unknown"
-    },
-
-    {
-        accused: "Darwin Enrique Padron-Acosta",
-        moneyAmount: 9052397.73,
-        caseID: "4:16-cr-00437",
-        state: "TX",
-        year: 2016,
-        caseStatus: "resolved",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 8347849
     },
 
     {
@@ -516,7 +506,7 @@ export const dataForTable = [
         state: "FL",
         year: 2017,
         caseStatus: "resolved",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 284808672.61
     },
 
     {
@@ -531,7 +521,7 @@ export const dataForTable = [
 
     {
         accused: "Raul Gorrin Belisario",
-        moneyAmount: 79000000,
+        moneyAmount: "unknown",
         caseID: "18-cr-80160",
         state: "FL",
         year: 2018,
@@ -545,7 +535,7 @@ export const dataForTable = [
         caseID: "18-cr-80160",
         state: "FL",
         year: 2018,
-        caseStatus: "ongoing",
+        caseStatus: "resolved",
         forfeitedAmount: 1291902.66
     },
 
@@ -556,7 +546,7 @@ export const dataForTable = [
         state: "FL",
         year: 2021,
         caseStatus: "resolved",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 21248434.25
     },
 
     {
@@ -565,7 +555,7 @@ export const dataForTable = [
         caseID: "1:15-cr-00765-PAC",
         state: "NY",
         year: 2016,
-        caseStatus: "unknown",
+        caseStatus: "resolved",
         forfeitedAmount: "unknown"
     },
 
@@ -576,17 +566,17 @@ export const dataForTable = [
         state: "FL",
         year: 2018,
         caseStatus: "unknown",
-        forfeitedAmount: 839803.33
+        forfeitedAmount: 2839803.33
     },
 
     {
         accused: "Francisco Convit",
-        moneyAmount: 45585667.46,
+        moneyAmount: 49265050.85,
         caseID: "18-cr-20685",
         state: "FL",
         year: 2018,
         caseStatus: "ongoing",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 45585667.46
     },
 
     {
@@ -595,8 +585,8 @@ export const dataForTable = [
         caseID: "1:18-cr-20685-KMW",
         state: "FL",
         year: 2018,
-        caseStatus: "unknown",
-        forfeitedAmount: 3938705.3
+        caseStatus: "resolved",
+        forfeitedAmount: 3945176.64
     },
 
     {
@@ -606,7 +596,7 @@ export const dataForTable = [
         state: "FL",
         year: 2019,
         caseStatus: "resolved",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 600000
     },
 
     {
@@ -626,7 +616,7 @@ export const dataForTable = [
         state: "TX",
         year: 2020,
         caseStatus: "resolved",
-        forfeitedAmount: 157501.42
+        forfeitedAmount: 6075108.92
     },
 
     {
@@ -635,8 +625,8 @@ export const dataForTable = [
         caseID: "4:15-cr-00654",
         state: "TX",
         year: 2015,
-        caseStatus: "unknown",
-        forfeitedAmount: "unknown"
+        caseStatus: "resolved",
+        forfeitedAmount: 19269770.05
     },
 
     {
@@ -685,8 +675,8 @@ export const dataForTable = [
         caseID: "1:17-cr-00077-WHP",
         state: "NY",
         year: 2018,
-        caseStatus: "unknown",
-        forfeitedAmount: "unknown"
+        caseStatus: "resolved",
+        forfeitedAmount: 379427.29
     },
 
     {
@@ -695,8 +685,8 @@ export const dataForTable = [
         caseID: "1:17-cr-00077-WHP",
         state: "NY",
         year: 2018,
-        caseStatus: "unknown",
-        forfeitedAmount: "unknown"
+        caseStatus: "resolved",
+        forfeitedAmount: 379427.29
     },
 
     {
@@ -706,7 +696,7 @@ export const dataForTable = [
         state: "FL",
         year: 2022,
         caseStatus: "ongoing",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 424607.52
     },
 
     {
@@ -755,15 +745,7 @@ export const dataForTable = [
         caseStatus: "resolved",
         forfeitedAmount: "unknown"
     },
-    {
-        accused: "Naman Wakil",
-        moneyAmount: 21248434.25,
-        caseID: "23-cv-22987",
-        state: "FL",
-        year: 2024,
-        caseStatus: "resolved",
-        forfeitedAmount: "unknown"
-    }, 
+    
     {
         accused: "Fabrizio Della Polla De-Simone",
         moneyAmount: 8000000,
@@ -784,7 +766,7 @@ export const dataForTable = [
     },
     {
         accused: "Maikel Moreno Perez",
-        moneyAmount: 0,
+        moneyAmount: "unknown",
         caseID: "23-CR-20035",
         state: "FL",
         year: 2023,
@@ -797,16 +779,16 @@ export const dataForTable = [
         caseID: "22-CR-20423",
         state: "FL",
         year: 2022,
-        caseStatus: "unknown",
+        caseStatus: "resolved",
         forfeitedAmount: 841649.88
     },
     {
         accused: "Jose Vicente Amparan Croquer",
-        moneyAmount: 0,
+        moneyAmount: "unknown",
         caseID: "18-CR-20685",
         state: "FL",
         year: 2018,
-        caseStatus: "unknown",
+        caseStatus: "ongoing",
         forfeitedAmount: 40405.72
     },
     {
@@ -815,7 +797,70 @@ export const dataForTable = [
         caseID: "21-CV-20614",
         state: "FL",
         year: 2021,
-        caseStatus: "unknown",
+        caseStatus: "resolved",
         forfeitedAmount: 43769169.48
-    } 
+    },
+    {
+        accused: "Raúl Gorrín Belisario (Money Flight)",
+        moneyAmount: "unknown",
+        caseID: "24-cr-20468",
+        state: "FL",
+        year: 2024,
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
+    },
+ {
+        accused: "Jorge Figueira",
+        moneyAmount: "unknown",
+        caseID: "25-mj-730",
+        state: "VA",
+        year: 2025,
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
+    },
+    {
+        accused: "Irazmar Carbajal De Jesus",
+        moneyAmount: "unknown",
+        caseID: "25-cr-20426",
+        state: "FL",
+        year: 2025,
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
+    },
+    {
+        accused: "Andre Arick Komarczyk",
+        moneyAmount: "unknown",
+        caseID: "25-cr-20426",
+        state: "FL",
+        year: 2025,
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown" 
+    },
+    {
+        accused: "David Rivera",
+        moneyAmount: "unknown",
+        caseID: "24-cr-00570",
+        state: "DC",
+        year: 2024,
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
+    },
+    {
+        accused: "Juan Carlos Cairo-Padrón",
+        moneyAmount: "unknown",
+        caseID: "25-mj-00348-1",
+        state: "TX",
+        year: 2025,
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown" 
+    },
+    {
+        accused: "Thomas Michael Fortinberry",
+        moneyAmount: "unknown",
+        caseID: "25-mj-00348-1",
+        state: "TX",
+        year: 2025,
+        caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
+    },
 ];
