@@ -27,7 +27,7 @@ export const cases = [{
         moneyAmount: 49265050.85,
         caseID: "1:18-cr-20685-KMW",
         state: "FL",
-        forfeitedAmount: 5000000
+        forfeitedAmount: 9253754
 },
 
     {
@@ -40,7 +40,7 @@ export const cases = [{
 
     {
         accused: "Francisco Illarramendi",
-        moneyAmount: 25844834,
+        moneyAmount: 0, // We don't know so we put 0
         caseID: "3:11-cr-0041",
         state: "CT",
         forfeitedAmount: "unknown"
@@ -59,7 +59,7 @@ export const cases = [{
         moneyAmount: 18514560,
         caseID: "13-cr-00671",
         state: "NY",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 13474511.14
 },
 
     {
@@ -67,7 +67,7 @@ export const cases = [{
         moneyAmount: 11896743,
         caseID: "13-cr-673",
         state: "NY",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 1475122.56
 },
 
     {
@@ -83,7 +83,7 @@ export const cases = [{
         moneyAmount: 7812315.15,
         caseID: "4:15-cr-00636",
         state: "TX",
-        forfeitedAmount: 210625.79
+        forfeitedAmount: 1555280.04
 },
 
     {
@@ -91,7 +91,7 @@ export const cases = [{
         moneyAmount: 5787824,
         caseID: "13-cr-670",
         state: "NY",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 1979391.84
 },
 
     {
@@ -104,7 +104,7 @@ export const cases = [{
 
     {
         accused: "Luis Alberto Chacín Haddad",
-        moneyAmount: 5500000,
+        moneyAmount: 0, // We don't know so we put 0
         caseID: "1:19-CR-20351-CMA",
         state: "FL",
         forfeitedAmount: "unknown"
@@ -123,7 +123,7 @@ export const cases = [{
         moneyAmount: 4500000,
         caseID: "19-cr-20725",
         state: "FL",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 2525000
 },
 
     {
@@ -147,7 +147,7 @@ export const cases = [{
         moneyAmount: 3783337.93,
         caseID: "1:21-cr-20442-PCH-1/",
         state: "FL",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 380550
 },
 
     {
@@ -155,7 +155,7 @@ export const cases = [{
         moneyAmount: 3238720.19,
         caseID: "16-cr-00436",
         state: "TX",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 891760.52
 },
 
     {
@@ -179,7 +179,7 @@ export const cases = [{
         moneyAmount: 1820981.05,
         caseID: "4:17-cv-02920-SNLJ",
         state: "MO",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 1820981.05
 },
 
     {
@@ -203,7 +203,7 @@ export const cases = [{
         moneyAmount: 1250000,
         caseID: "3:11-cr-00086-SRU",
         state: "CT",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 1070327.37
 },
 
     {
@@ -299,7 +299,7 @@ export const cases = [{
         moneyAmount: 300000,
         caseID: "1:13-cr-20930-UU",
         state: "FL",
-        forfeitedAmount: 179484.28
+        forfeitedAmount: 240661.99
 },
 
     {
@@ -339,7 +339,7 @@ export const cases = [{
         moneyAmount: 8347849,
         caseID: "1:13-cr-00901-PAE",
         state: "NY",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 8347849
 },
 
     {
@@ -355,7 +355,7 @@ export const cases = [{
         moneyAmount: 1000000000,
         caseID: "17-cr-80242",
         state: "FL",
-        forfeitedAmount: "unknown"      
+        forfeitedAmount: 284808672.61      
 },
 
     {
@@ -368,7 +368,7 @@ export const cases = [{
 
     {
         accused: "Raul Gorrin Belisario",
-        moneyAmount: 79000000,
+        moneyAmount: 0, // we don't know so we put 0
         caseID: "18-cr-80160",
         state: "FL",
         forfeitedAmount: "unknown"
@@ -387,7 +387,7 @@ export const cases = [{
         moneyAmount: 50000000,
         caseID: "1:21-cr-20406-KMW",
         state: "FL",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 21248434.25
 },
 
     {
@@ -403,15 +403,15 @@ export const cases = [{
         moneyAmount: 12000000,
         caseID: "1:18-cr-20685-KMW",
         state: "FL",
-        forfeitedAmount: 839803.33
+        forfeitedAmount: 2839803.33
 },
 
     {
         accused: "Francisco Convit",
-        moneyAmount: 45585667.46,
+        moneyAmount: 49265050.85,
         caseID: "18-cr-20685",
         state: "FL",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 45585667.46
 },
 
     {
@@ -419,7 +419,7 @@ export const cases = [{
         moneyAmount: 12300000,
         caseID: "1:18-cr-20685-KMW",
         state: "FL",
-        forfeitedAmount: 3938705.3
+        forfeitedAmount: 3945176.64
 },
 
     {
@@ -427,7 +427,7 @@ export const cases = [{
         moneyAmount: 600000,
         caseID: " 1:18-cr-20682-CMA",
         state: "FL",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 600000
 },
 
     {
@@ -443,7 +443,7 @@ export const cases = [{
         moneyAmount: 8887759.62,
         caseID: "20-cr-00305",
         state: "TX",
-        forfeitedAmount: 157501.42
+        forfeitedAmount: 6075108.92
 },
 
     {
@@ -451,7 +451,7 @@ export const cases = [{
         moneyAmount: 19269770.05,
         caseID: "4:15-cr-00654",
         state: "TX",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 19269770.05
 },
 
     {
@@ -491,7 +491,7 @@ export const cases = [{
         moneyAmount: 101346285.42,
         caseID: "1:17-cr-00077-WHP",
         state: "NY",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 379427.29
 },
 
     {
@@ -499,7 +499,7 @@ export const cases = [{
         moneyAmount: 32000000,
         caseID: "22-cr-20391",
         state: "FL",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 424607.52
 },
 
     {
@@ -512,7 +512,7 @@ export const cases = [{
 
     {
         accused: "José Manuel González Testino",
-        moneyAmount: 0,
+        moneyAmount: 14000000,
         caseID: "4:19-cr-00341",
         state: "TX",
         forfeitedAmount: 14000000
@@ -541,10 +541,10 @@ export const cases = [{
 },
     {
         accused: "Naman Wakil",
-        moneyAmount: 21248434.25,
-        caseID: "23-cv-22987",
+        moneyAmount: 50000000,
+        caseID: "1:21-cr-20406-KMW",
         state: "FL",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 21248434.25
 },
     {
         accused: "Villalobos, Della Polla, Blackforest",
@@ -562,7 +562,7 @@ export const cases = [{
 },
     {
         accused: "Maikel Moreno Perez",
-        moneyAmount: 0,
+        moneyAmount: 0, // we don't know so we put 0 for now
         caseID: "23-CR-20035",
         state: "FL",
         forfeitedAmount: "unknown"
@@ -576,7 +576,7 @@ export const cases = [{
 },
     {
         accused: "Jose Vicente Amparan Croquer",
-        moneyAmount: 40405.72,
+        moneyAmount: 0, // We don't know, we put 0 for now
         caseID: "18-CR-20685",
         state: "FL",
         forfeitedAmount: 40405.72
