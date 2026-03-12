@@ -13,6 +13,8 @@ let dataForPlot = [];
 
 let totalMoneyInvolved = 0;
 
+let estimatedRecoveredAmount = 0;
+
 
 let statesCaseCount = {};
 
@@ -31,6 +33,10 @@ for (let i = 0; i < cases.length; i++) {
     });
 
     totalMoneyInvolved += cases[i].moneyAmount;
+    if ( cases[i].forfeitedAmount != "unknown" ){
+        estimatedRecoveredAmount += cases[i].forfeitedAmount;
+    } 
+        
     let state = cases[i].state;
 
     if (statesMoneyCount[state]) {
@@ -60,7 +66,11 @@ for (const state in statesMoneyCount) {
 
 let totalMoney = "$" + totalMoneyInvolved.toLocaleString("en-US");
 
+let estimatedRecoveredMoney = "$" + estimatedRecoveredAmount.toLocaleString("en-US");
+
 document.getElementById("formatted-number").textContent = totalMoney;
+document.getElementById("estimated-recovered-money").textContent = estimatedRecoveredMoney;
+
 
 function adjustYAxisMax(chart) {
     const visibleData = chart.series[0].data.filter(point => !point.visible); // Get the currently visible data
