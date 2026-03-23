@@ -71,14 +71,6 @@ export const cases = [{
 },
 
     {
-        accused: "Darwin Enrique Padron-Acosta",
-        moneyAmount: 9052397.73,
-        caseID: "16-cr-00437",
-        state: "TX",
-        forfeitedAmount: "unknown"
-},
-
-    {
         accused: "José Luis Ramos Castillo",
         moneyAmount: 7812315.15,
         caseID: "4:15-cr-00636",
@@ -383,14 +375,6 @@ export const cases = [{
 },
 
     {
-        accused: "Naman Wakil",
-        moneyAmount: 50000000,
-        caseID: "1:21-cr-20406-KMW",
-        state: "FL",
-        forfeitedAmount: 21248434.25
-},
-
-    {
         accused: "Roberto de Jesús Soto García",
         moneyAmount: 206250,
         caseID: "1:15-cr-00765-PAC",
@@ -448,10 +432,10 @@ export const cases = [{
 
     {
         accused: "Abraham José Shiera Bastidas",
-        moneyAmount: 19269770.05,
+        moneyAmount: 18290830.82,
         caseID: "4:15-cr-00654",
         state: "TX",
-        forfeitedAmount: 19269770.05
+        forfeitedAmount: 18290830.82
 },
 
     {
