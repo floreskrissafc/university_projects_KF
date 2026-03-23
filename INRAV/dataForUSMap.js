@@ -3,19 +3,19 @@ export const statePoints = [
         name: 'Texas',
         lat: 31.9686,
         lon: -99.9018,
-        cases: 24
+        cases: 23
 },
     {
         name: 'Florida',
         lat: 27.9944,
         lon: -81.7603,
-        cases: 29
+        cases: 35
 },
     {
         name: 'New York',
         lat: 40.7128,
         lon: -74.0060,
-        cases: 11
+        cases: 13
 },
     {
         name: 'Connecticut',
