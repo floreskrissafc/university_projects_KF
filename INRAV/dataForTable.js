@@ -621,12 +621,12 @@ export const dataForTable = [
 
     {
         accused: "Abraham José Shiera Bastidas",
-        moneyAmount: 19290830.82,
+        moneyAmount: 18290830.82,
         caseID: "4:15-cr-00654",
         state: "TX",
         year: 2015,
         caseStatus: "resolved",
-        forfeitedAmount: 19269770.05
+        forfeitedAmount: 18290830.82
     },
 
     {
