@@ -16,8 +16,8 @@ export const cases = [{
 
     {
         accused: 'Álex Naim Saab Morán y Álvaro Pulido Vargas',
-        moneyAmount: 362692197.66,
-        caseID: "19-cr-20450",
+        moneyAmount: 195000000,
+        caseID: "26-cr-20020",
         state: "FL",
         forfeitedAmount: "unknown"
 },
@@ -48,8 +48,8 @@ export const cases = [{
 
     {
         accused: "David Rivera y Esther Nuhfer",
-        moneyAmount: 23750000,
-        caseID: "3:11-cr-0041",
+        moneyAmount: 35000000,
+        caseID: "22-cr-20552",
         state: "FL",
         forfeitedAmount: "unknown"
 },
@@ -91,15 +91,15 @@ export const cases = [{
         moneyAmount: 5500000,
         caseID: "19-cr-20351",
         state: "FL",
-        forfeitedAmount: 1100000
+        forfeitedAmount: 4776247.13
 },
 
     {
         accused: "Luis Alberto Chacín Haddad",
-        moneyAmount: 0, // We don't know so we put 0
+        moneyAmount: 5500000, // We don't know so we put 0
         caseID: "1:19-CR-20351-CMA",
         state: "FL",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 805512.91
 },
 
     {
@@ -107,7 +107,7 @@ export const cases = [{
         moneyAmount: 5000000,
         caseID: "1:19-cr-20726-JEM",
         state: "FL",
-        forfeitedAmount: 256829.14 
+        forfeitedAmount: 191500 
 },
 
     {
@@ -187,7 +187,7 @@ export const cases = [{
         moneyAmount: 1318648,
         caseID: "17-cr-00394",
         state: "TX",
-        forfeitedAmount: 1318648
+        forfeitedAmount: 993528.31
 },
 
     {
@@ -227,7 +227,7 @@ export const cases = [{
         moneyAmount: 978339.5,
         caseID: "4:18-cr-00611",
         state: "TX",
-        forfeitedAmount: 978339.5
+        forfeitedAmount: 632608.20
 },
 
     {
@@ -243,7 +243,7 @@ export const cases = [{
         moneyAmount: 590446,
         caseID: "15-cr-00637",
         state: "TX",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 590446
 },
 
     {
@@ -427,12 +427,12 @@ export const cases = [{
         moneyAmount: 8887759.62,
         caseID: "20-cr-00305",
         state: "TX",
-        forfeitedAmount: 6075108.92
+        forfeitedAmount: 1247399.96
 },
 
     {
         accused: "Abraham José Shiera Bastidas",
-        moneyAmount: 18290830.82,
+        moneyAmount: 19269770.05,
         caseID: "4:15-cr-00654",
         state: "TX",
         forfeitedAmount: 18290830.82
@@ -448,18 +448,18 @@ export const cases = [{
 
     {
         accused: "César David Rincón Godoy",
-        moneyAmount: 1212905.87,
+        moneyAmount: 7033504.71,
         caseID: "4:17-cr-00514",
         state: "TX",
-        forfeitedAmount: 1212905.87
+        forfeitedAmount: 1330905.87
 },
 
     {
         accused: "Luis Carlos De León Pérez",
         moneyAmount: 18118783.15,
-        caseID: "17-cr-514",
+        caseID: "17-cr-00514",
         state: "TX",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 18118783.15
 },
 
     {
@@ -532,10 +532,10 @@ export const cases = [{
 },
     {
         accused: "Villalobos, Della Polla, Blackforest",
-        moneyAmount: 8000000,
+        moneyAmount: 2200000,
         caseID: "24-cv-001714",
         state: "FL",
-        forfeitedAmount: 8000000
+        forfeitedAmount: 2200000
 },
     {
         accused: "George Semerene",
@@ -571,5 +571,18 @@ export const cases = [{
         caseID: "21-CV-20614",
         state: "FL",
         forfeitedAmount: 43769169.48
-}                    
+},
+   {
+        accused: "Jorge Figueira",
+        moneyAmount: 1000000000,
+        caseID: "26-cr-00074",
+        state: "VA",
+        forfeitedAmount: 207316.17
+},
+  {
+        accused: "Jesus Gabriel Rodriguez Jr",
+        moneyAmount: 276817,
+        caseID: "21-cr-20529",
+        forfeitedAmount: "unknown"
+    },
 ];
