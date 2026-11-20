@@ -61,8 +61,8 @@ export const dataForTable = [
 
     {
         accused: 'Álex Naim Saab Morán',
-        moneyAmount: 362692197.66,
-        caseID: "19-cr-20450",
+        moneyAmount: 195000000.00,
+        caseID: "26-CR-20020",
         state: "FL",
         year: 2019,
         caseStatus: "ongoing",
@@ -111,8 +111,8 @@ export const dataForTable = [
 
     {
         accused: "David Rivera",
-        moneyAmount: 23750000,
-        caseID: "3:11-cr-0041",
+        moneyAmount: 35000000,
+        caseID: "22-cr-20552",
         state: "FL",
         year: 2022,
         caseStatus: "ongoing",
@@ -121,8 +121,8 @@ export const dataForTable = [
 
     {
         accused: "Esther Nuhfer",
-        moneyAmount: 23750000,
-        caseID: "3:11-cr-0041",
+        moneyAmount: 35000000,
+        caseID: "22-cr-20552",
         state: "FL",
         year: 2022,
         caseStatus: "ongoing",
@@ -186,17 +186,17 @@ export const dataForTable = [
         state: "FL",
         year: 2019,
         caseStatus: "resolved",
-        forfeitedAmount: 1100000
+        forfeitedAmount: 4776247.13
     },
 
     {
         accused: "Luis Alberto Chacín Haddad",
-        moneyAmount: "unknown",
+        moneyAmount: 5500000,
         caseID: "1:19-CR-20351-CMA",
         state: "FL",
         year: 2019,
         caseStatus: "resolved",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 805512.91
     },
 
     {
@@ -206,7 +206,7 @@ export const dataForTable = [
         state: "FL",
         year: 2019,
         caseStatus: "resolved",
-        forfeitedAmount: 256829.14  
+        forfeitedAmount: 191500  
     },
 
     {
@@ -316,7 +316,7 @@ export const dataForTable = [
         state: "TX",
         year: 2017,
         caseStatus: "resolved",
-        forfeitedAmount: 1318648
+        forfeitedAmount: 993528.31
     },
 
     {
@@ -366,7 +366,7 @@ export const dataForTable = [
         state: "TX",
         year: 2018,
         caseStatus: "resolved",
-        forfeitedAmount: 978339.5
+        forfeitedAmount: 632608.20
     },
 
     {
@@ -386,7 +386,7 @@ export const dataForTable = [
         state: "TX",
         year: 2015,
         caseStatus: "resolved",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 590446
     },
 
     {
@@ -612,16 +612,16 @@ export const dataForTable = [
     {
         accused: "José Luis De Jongh Atencio",
         moneyAmount: 8887759.62,
-        caseID: "20-cr-00305",
+        caseID: "2020-cr-00305",
         state: "TX",
         year: 2020,
         caseStatus: "resolved",
-        forfeitedAmount: 6075108.92
+        forfeitedAmount: 1247399.96
     },
 
     {
         accused: "Abraham José Shiera Bastidas",
-        moneyAmount: 18290830.82,
+        moneyAmount: 19269770.05,
         caseID: "4:15-cr-00654",
         state: "TX",
         year: 2015,
@@ -641,22 +641,22 @@ export const dataForTable = [
 
     {
         accused: "César David Rincón Godoy",
-        moneyAmount: 1212905.87,
+        moneyAmount: 7033504.71,
         caseID: "4:17-cr-00514",
         state: "TX",
         year: 2017,
         caseStatus: "resolved",
-        forfeitedAmount: 1212905.87
+        forfeitedAmount: 1330905.07
     },
 
     {
         accused: "Luis Carlos De León Pérez",
         moneyAmount: 18118783.15,
-        caseID: "17-cr-514",
+        caseID: "17-cr-00514",
         state: "TX",
         year: 2017,
         caseStatus: "resolved",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 18118783.15
     },
 
     {
@@ -748,12 +748,12 @@ export const dataForTable = [
     
     {
         accused: "Fabrizio Della Polla De-Simone",
-        moneyAmount: 8000000,
+        moneyAmount: 2200000,
         caseID: "24-cv-001714",
         state: "FL",
         year: 2024,
         caseStatus: "ongoing",
-        forfeitedAmount: 8000000
+        forfeitedAmount: 2200000
     },
     {
         accused: "George Semerene",
@@ -811,12 +811,12 @@ export const dataForTable = [
     },
  {
         accused: "Jorge Figueira",
-        moneyAmount: "unknown",
-        caseID: "25-mj-730",
+        moneyAmount: 1000000000,
+        caseID: "26-cr-00074",
         state: "VA",
         year: 2025,
         caseStatus: "ongoing",
-        forfeitedAmount: "unknown"
+        forfeitedAmount: 207316.17
     },
     {
         accused: "Irazmar Carbajal De Jesus",
@@ -861,6 +861,15 @@ export const dataForTable = [
         state: "TX",
         year: 2025,
         caseStatus: "ongoing",
+        forfeitedAmount: "unknown"
+    },
+    {
+        accused: "Jesus Gabriel Rodriguez Jr",
+        moneyAmount: 276817,
+        caseID: "21-cr-20529",
+        state: "FL",
+        year: 2021,
+        caseStatus: "resolved",
         forfeitedAmount: "unknown"
     },
 ];
