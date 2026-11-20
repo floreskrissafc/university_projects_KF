@@ -9,7 +9,7 @@ export const statePoints = [
         name: 'Florida',
         lat: 27.9944,
         lon: -81.7603,
-        cases: 35
+        cases: 36
 },
     {
         name: 'New York',
